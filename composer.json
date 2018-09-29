@@ -1,0 +1,19 @@
+{
+    "name": "cw/ext-bookdatabase",
+    "type": "typo3-cms-extension",
+    "description": "Simple Bookdatabase",
+    "authors": [
+        {
+            "name": "Christoph Werner",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cw\\ExtBookdatabase\\": "Classes"
+        }
+    }
+}
