@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-08-20T13:46:26Z" product-name="ext_bookdatabase">
+		<header/>
+		<body>
+			<trans-unit id="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="author.description">
+				<source>author</source>
+			</trans-unit>
+			<trans-unit id="translator.description">
+				<source>translator</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="isbn.description">
+				<source>isbn</source>
+			</trans-unit>
+			<trans-unit id="publishingyear.description">
+				<source>publishingyear</source>
+			</trans-unit>
+			<trans-unit id="edition.description">
+				<source>edition</source>
+			</trans-unit>
+			<trans-unit id="keywords.description">
+				<source>keywords</source>
+			</trans-unit>
+			<trans-unit id="signed.description">
+				<source>signed</source>
+			</trans-unit>
+			<trans-unit id="soldout.description">
+				<source>soldout</source>
+			</trans-unit>
+			<trans-unit id="borroweddate.description">
+				<source>borroweddate</source>
+			</trans-unit>
+			<trans-unit id="publisher.description">
+				<source>publisher</source>
+			</trans-unit>
+			<trans-unit id="category.description">
+				<source>category</source>
+			</trans-unit>
+			<trans-unit id="location.description">
+				<source>location</source>
+			</trans-unit>
+			<trans-unit id="owner.description">
+				<source>owner</source>
+			</trans-unit>
+			<trans-unit id="type.description">
+				<source>type</source>
+			</trans-unit>
+			<trans-unit id="language.description">
+				<source>language</source>
+			</trans-unit>
+			<trans-unit id="bookcondition.description">
+				<source>bookcondition</source>
+			</trans-unit>
+			<trans-unit id="bookseries.description">
+				<source>bookseries</source>
+			</trans-unit>
+			<trans-unit id="personborrowed.description">
+				<source>personborrowed</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,135 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<h1>{book.title} - {book.author}</h1>
+
+<table class="table_tx-ext-bookdatabase" >
+
+    <f:if condition="{book.translator}">
+    <tr>
+        <td>
+            <f:translate key="tx_extbookdatabase_domain_model_book.translator" />
+        </td>
+        <td>
+        {book.translator}
+        </td>
+    </tr>
+    </f:if>
+    <tr>
+        <td>
+            <f:translate key="tx_extbookdatabase_domain_model_book.description" />
+        </td>
+        <td>
+        {book.description}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_extbookdatabase_domain_model_book.isbn" />
+        </td>
+        <td>
+        {book.isbn}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_extbookdatabase_domain_model_book.publishingyear" />
+        </td>
+        <td>
+        {book.publishingyear}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_extbookdatabase_domain_model_book.edition" />
+        </td>
+        <td>
+        {book.edition}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_extbookdatabase_domain_model_book.keywords" />
+        </td>
+        <td>
+        {book.keywords}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_extbookdatabase_domain_model_book.signed" />
+        </td>
+        <td>
+                <f:if condition="{book.signed}==1">
+                    <f:then>
+                    ja
+                    </f:then>
+                    <f:else>
+                    nein
+                    </f:else>
+                </f:if>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_extbookdatabase_domain_model_book.soldout" />
+        </td>
+        <td>
+                <f:if condition="{book.soldout}==1">
+                    <f:then>
+                    ja
+                    </f:then>
+                    <f:else>
+                    nein / unbekannt
+                    </f:else>
+                </f:if>        
+        </td>
+    </tr>
+    <tr>
+        <td>Ort</td>
+        <td>{book.location.locationitem}</td>
+    </tr>
+    <tr>
+        <td>Eigentümer</td>
+        <td>{book.owner.owneritem}</td>
+    </tr>
+    <tr>
+        <td>Verlag</td>
+        <td>{book.publisher.publisher}</td>
+    </tr>    
+    <tr>
+        <td>Kategorie</td>
+        <td><f:for each="{book.category}" as="category">{category.category}</f:for></td>
+    </tr>     
+     <tr>
+        <td>Sprache</td>
+        <td>{book.language.languageitem}</td>
+    </tr>   
+     <tr>
+        <td>Typ</td>
+        <td>{book.type.typeitem}</td>
+    </tr>  
+     <tr>
+        <td>Zustand</td>
+        <td>{book.bookcondition.conditionitem }</td>
+    </tr> 
+    <f:if condition="{book.bookseries.title}">     
+     <tr>
+        <td>Serie</td>
+        <td>{book.bookseries.title}</td>
+    </tr>
+     </f:if>
+     <tr>
+        <td>Signatur</td>
+        <td> {book.owner.owneritemshortcut}-{book.publishingyear}-<f:for each="{book.category}" as="category">{category.categoryshortcut}</f:for>-{book.uid}</td>
+    </tr> 
+      <tr>
+        <td>Ausgeliehen an</td>
+        <td>{book.personborrowed.personname}</td>
+    </tr>
+      <tr>
+        <td>Ausgeliehen am</td>
+        <td><f:format.date format="d.m.Y">{book.borroweddate}</f:format.date></td>
+    </tr>
+  
+    
+    </table>
+</html>

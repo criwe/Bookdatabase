@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-05-09T13:18:13Z" product-name="ext_bookdatabase">
+		<header/>
+		<body>
+			<trans-unit id="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="author.description">
+				<source>author</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="isbn.description">
+				<source>isbn</source>
+			</trans-unit>
+			<trans-unit id="publishingyear.description">
+				<source>publishingyear</source>
+			</trans-unit>
+			<trans-unit id="edition.description">
+				<source>edition</source>
+			</trans-unit>
+			<trans-unit id="keywords.description">
+				<source>keywords</source>
+			</trans-unit>
+			<trans-unit id="publisher.description">
+				<source>publisher</source>
+			</trans-unit>
+			<trans-unit id="category.description">
+				<source>category</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

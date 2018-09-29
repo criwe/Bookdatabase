@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-08-20T13:46:26Z" product-name="ext_bookdatabase">
+		<header/>
+		<body>
+			<trans-unit id="tx_extbookdatabase_domain_model_book">
+				<source>Book</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_book.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_book.author">
+				<source>Author</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_book.translator">
+				<source>Translator</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_book.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_book.isbn">
+				<source>Isbn</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_book.publishingyear">
+				<source>Publishingyear</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_book.edition">
+				<source>Edition</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_book.keywords">
+				<source>Keywords</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_book.signed">
+				<source>Signed</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_book.soldout">
+				<source>Soldout</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_book.borroweddate">
+				<source>Borroweddate</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_book.publisher">
+				<source>Publisher</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_book.category">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_book.location">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_book.owner">
+				<source>Owner</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_book.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_book.language">
+				<source>Language</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_book.bookcondition">
+				<source>Bookcondition</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_book.bookseries">
+				<source>Bookseries</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_book.personborrowed">
+				<source>Personborrowed</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_publisher">
+				<source>Publisher</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_publisher.publisher">
+				<source>Publisher</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_category">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_category.category">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_category.categoryshortcut">
+				<source>Categoryshortcut</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_location">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_location.locationitem">
+				<source>Locationitem</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_location.locationshortcut">
+				<source>Locationshortcut</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_owner">
+				<source>Owner</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_owner.owneritem">
+				<source>Owneritem</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_owner.owneritemshortcut">
+				<source>Owneritemshortcut</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_language">
+				<source>Language</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_language.languageitem">
+				<source>Languageitem</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_type.typeitem">
+				<source>Typeitem</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_bookcondition">
+				<source>Bookcondition</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_bookcondition.conditionitem">
+				<source>Conditionitem</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_bookseries">
+				<source>Bookseries</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_bookseries.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_bookseries.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_personborrowed">
+				<source>Personborrowed</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_personborrowed.personname">
+				<source>Personname</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_personborrowed.personadress">
+				<source>Personadress</source>
+			</trans-unit>
+			<trans-unit id="tx_extbookdatabase_domain_model_personborrowed.personemail">
+				<source>Personemail</source>
+			</trans-unit>
+			<trans-unit id="tx_ext_bookdatabase_booklist.name">
+				<source>booklist</source>
+			</trans-unit>
+			<trans-unit id="tx_ext_bookdatabase_booklist.description">
+				<source></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
