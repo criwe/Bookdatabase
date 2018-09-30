@@ -14,6 +14,7 @@ Description:
 - Output 
 -- sortable and filterable (jquery datatables)
 -- List and detail view
+-- Creates a signature for every book, build from owneritemshortcut-bookuid-locationshortcut, i.e. criwe-12345-self1 
 
 Pros & Cons
 ------------------
