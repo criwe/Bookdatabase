@@ -11,6 +11,7 @@ return [
         'transOrigPointerField' => 'l10n_parent',
         'transOrigDiffSourceField' => 'l10n_diffsource',
         'delete' => 'deleted',
+        'default_sortby' => "ORDER BY uid DESC",
         'enablecolumns' => [
             'disabled' => 'hidden',
             'starttime' => 'starttime',
@@ -114,7 +115,7 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim'
+                'eval' => 'trim, required'
             ],
         ],
         'author' => [
@@ -216,7 +217,7 @@ return [
                 'type' => 'input',
                 'size' => 7,
                 'eval' => 'date',
-                'default' => time()
+                'default' => ''
             ],
         ],
         'publisher' => [
@@ -279,6 +280,9 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'foreign_table' => 'tx_extbookdatabase_domain_model_location',
+                'items' => [
+                    ['-', '0'],
+                ],                 
                 'minitems' => 0,
                 'maxitems' => 1,
             ],
@@ -290,6 +294,9 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'foreign_table' => 'tx_extbookdatabase_domain_model_owner',
+                'items' => [
+                    ['-', '0'],
+                ],                 
                 'minitems' => 0,
                 'maxitems' => 1,
             ],
@@ -302,7 +309,7 @@ return [
                 'renderType' => 'selectSingle',
                 'foreign_table' => 'tx_extbookdatabase_domain_model_type',
                 'items' => [
-                    ['', ''],
+                    ['-', '0'],
                 ],                
                 'minitems' => 0,
                 'maxitems' => 1,
@@ -326,6 +333,9 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'foreign_table' => 'tx_extbookdatabase_domain_model_bookcondition',
+                'items' => [
+                    ['-', '0'],
+                ],                 
                 'minitems' => 0,
                 'maxitems' => 1,
             ],
@@ -337,6 +347,9 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'foreign_table' => 'tx_extbookdatabase_domain_model_bookseries',
+                'items' => [
+                    ['-', '0'],
+                ],                 
                 'minitems' => 0,
                 'maxitems' => 1,
             ],
@@ -348,6 +361,9 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'foreign_table' => 'tx_extbookdatabase_domain_model_personborrowed',
+                'items' => [
+                    ['-', '0'],
+                ],                   
                 'minitems' => 0,
                 'maxitems' => 1,
             ],
