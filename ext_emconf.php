@@ -14,7 +14,7 @@ $EM_CONF[$_EXTKEY] = [
     'title' => 'Bookdatabase',
     'description' => 'Simple Bookdatabase',
     'category' => 'plugin',
-    'author' => 'C. Werner',
+    'author' => 'Christoph Werner',
     'author_email' => 'info@itfoo.de',
     'state' => 'alpha',
     'internal' => '',
@@ -24,7 +24,7 @@ $EM_CONF[$_EXTKEY] = [
     'version' => '',
     'constraints' => [
         'depends' => [
-            'typo3' => '6.2',
+            'typo3' => '8.7',
         ],
         'conflicts' => [],
         'suggests' => [],
