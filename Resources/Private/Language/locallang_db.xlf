@@ -144,6 +144,21 @@
 			<trans-unit id="tx_ext_bookdatabase_booklist.description">
 				<source></source>
 			</trans-unit>
+            <trans-unit id="tx_extbookdatabase_tabgeneral">
+                <source>General</source>
+            </trans-unit>      
+            <trans-unit id="tx_extbookdatabase_tabborrowed">
+                <source>Borrowed</source>
+            </trans-unit> 
+            <trans-unit id="tx_extbookdatabase_tabclassification">
+                <source>Classification</source>
+            </trans-unit>
+            <trans-unit id="tx_extbookdatabase_tabwhere">
+                <source>Where</source>
+            </trans-unit> 
+            <trans-unit id="tx_extbookdatabase_tabempty">
+                <source></source>
+            </trans-unit>             
 		</body>
 	</file>
 </xliff>
