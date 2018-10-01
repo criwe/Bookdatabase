@@ -21,10 +21,47 @@ return [
         'iconfile' => 'EXT:ext_bookdatabase/Resources/Public/Icons/tx_extbookdatabase_domain_model_book.gif'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, author, translator, description, isbn, publishingyear, edition, keywords, signed, soldout, borroweddate, publisher, category, location, owner, type, language, bookcondition, bookseries, personborrowed',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, author, translator, description, isbn, publishingyear, edition, keywords, signed, soldout, publisher, category, location, owner, type, language, bookcondition, bookseries, personborrowed, borroweddate',
     ],
+    'palettes' => [
+        'signedsoldout' => [
+            'showitem' => '
+                signed, 
+                soldout,
+            ',
+        ],
+        'langtranslator' => [
+            'showitem' => '
+                language, 
+                translator, 
+            ',
+        ],
+        'publisherisbn' => [
+            'showitem' => '
+                publisher, 
+                isbn, 
+            ',
+        ],
+        'pubyearedition' => [
+            'showitem' => '
+                publishingyear, 
+                edition, 
+            ',
+        ],
+    ],    
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, author, translator, description, isbn, publishingyear, edition, keywords, signed, soldout, borroweddate, publisher, category, location, owner, type, language, bookcondition, bookseries, personborrowed, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
+        '1' => [
+            'showitem' => 
+            '--div--;LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabgeneral, sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, author, 
+            --palette--;LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabempty;langtranslator, 
+            description, --palette--;LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabempty;publisherisbn, 
+            --palette--;LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabempty;signedsoldout,
+             --palette--;LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabempty;pubyearedition,  
+            bookseries, bookcondition, 
+            --div--;LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabclassification, category, type, keywords,  
+            --div--;LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabwhere, location, owner, 
+            --div--;LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabborrowed, personborrowed, borroweddate, 
+        --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'], 
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -271,7 +308,7 @@ return [
                     ],
                 ],
             ],
-            
+
         ],
         'location' => [
             'exclude' => true,
@@ -368,6 +405,6 @@ return [
                 'maxitems' => 1,
             ],
         ],
-    
+
     ],
 ];
