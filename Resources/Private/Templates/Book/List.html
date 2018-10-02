@@ -22,11 +22,11 @@ Otherwise your changes will be overwritten the next time you save the extension 
     <tr>
         <th><f:translate key="tx_extbookdatabase_domain_model_book.title" /></th>
         <th><f:translate key="tx_extbookdatabase_domain_model_book.author" /></th>
-        <th>Kategorie </th>
-        <th>Ort </th>
-        <th>Signatur</th>
-        <th class="showmenot">Infos</th>
-        <th class="showmenot">uid</th>
+        <th><f:translate key="tx_extbookdatabase_domain_model_book.category" /></th>
+        <th><f:translate key="tx_extbookdatabase_domain_model_book.location" /></th>
+        <th><f:translate key="tx_extbookdatabase.signature" /></th>
+        <th class="showmenot"><f:translate key="tx_extbookdatabase.bookinfos" /></th>
+        <th class="showmenot"><f:translate key="tx_extbookdatabase.bookuid" /></th>
     </tr>
 </thead>
     
@@ -47,16 +47,16 @@ Otherwise your changes will be overwritten the next time you save the extension 
                 {book.owner.owneritemshortcut}-{book.uid}-{book.location.locationshortcut}
             </td>
             <td class="showmenot">
-             <p>Übersetzer: {book.translator}</p>
-             <p>ISBN: {book.isbn}</p>
-             <p>Veröffentlichungsdatum: {book.publishingyear}</p>
-             <p>Keywords: {book.keywords}</p>
-             <p>Ort: {book.location.locationitem}</p>
-             <p>Eigentürmer: {book.owner.owneritem}</p>
-             <p>Publisher: {book.publisher.publisher}</p>
-             <p>Kategorie: {category.category}</p>
-             <p>Typ: {book.type.typeitem}</p>
-             <p>Buchserie: {book.bookseries.title}</p>           
+             <p><f:translate key="tx_extbookdatabase_domain_model_book.translator" />: {book.translator}</p>
+             <p><f:translate key="tx_extbookdatabase_domain_model_book.isbn" />: {book.isbn}</p>
+             <p><f:translate key="tx_extbookdatabase_domain_model_book.publishingyear" />: {book.publishingyear}</p>
+             <p><f:translate key="tx_extbookdatabase_domain_model_book.keywords" />: {book.keywords}</p>
+             <p><f:translate key="tx_extbookdatabase_domain_model_book.location" />: {book.location.locationitem}</p>
+             <p><f:translate key="tx_extbookdatabase_domain_model_book.owner" />: {book.owner.owneritem}</p>
+             <p><f:translate key="tx_extbookdatabase_domain_model_publisher.publisher" />: {book.publisher.publisher}</p>
+             <p><f:translate key="tx_extbookdatabase_domain_model_book.category" />: {category.category}</p>
+             <p><f:translate key="tx_extbookdatabase_domain_model_book.type" />: {book.type.typeitem}</p>
+             <p><f:translate key="tx_extbookdatabase_domain_model_book.bookseries" />: {book.bookseries.title}</p>           
             </td>
 	    <td class="showmenot">
 		{book.uid}
