@@ -3,6 +3,9 @@
 .tx-ext-bookdatabase .f3-widget-paginator li { float:left; margin-right:5px; }
 .tx-ext-bookdatabase .searchdiv { margin-bottom:15px; }
 
+.tx-ext-bookdatabase #backlink { margin-top:1rem; margin-bottom:1rem; }
+.tx-ext-bookdatabase table.details th { text-align:left; background-color:#fff; border:solid 1px #dedede; }
+
 .tx-ext-bookdatabase table {
         border-collapse:separate;
         border-spacing:0px;
@@ -20,7 +23,7 @@
         border:solid 1px #dedede;
         
     }
-    .tx-ext-bookdatabase table tr:hover td {
+    .tx-ext-bookdatabase table tr:hover td, .tx-ext-bookdatabase table.details tr:hover th {
         background-color: #ebebeb;   
     }
 
