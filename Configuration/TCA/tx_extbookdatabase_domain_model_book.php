@@ -18,7 +18,7 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => 'title,author,translator,description,isbn,publishingyear,edition,keywords,signed,soldout,borroweddate,publisher,category,location,owner,type,language,bookcondition,bookseries,personborrowed',
-        'iconfile' => 'EXT:ext_bookdatabase/Resources/Public/Icons/tx_extbookdatabase_domain_model_book.gif'
+        'iconfile' => 'EXT:ext_bookdatabase/Resources/Public/Icons/tx_extbookdatabase_book.svg'
     ],
     'interface' => [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, author, translator, description, isbn, publishingyear, edition, keywords, signed, soldout, publisher, category, location, owner, type, language, bookcondition, bookseries, personborrowed, borroweddate',
