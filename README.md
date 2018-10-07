@@ -18,11 +18,18 @@ Working with TYPO3 8.7
 
 ## Pros & Cons
 
-
 - Pros
-  - I use the extension for my books, so it will be updated for new TYPO3-versions (when I have the time and want to, but it will)  
-  - I works 
+  - I use the extension for my own books, so it will be updated for new TYPO3-versions (when I have the time and want to, but it will)  
+  - It works 
 
 - Cons
   - the extension is designed for my requirements and some things may not be solved optimally
-  - I will maintain the extension for only ONE TYPO3 version (the one I´m using at the moment)
+  - I will maintain the extension for only ONE TYPO3 version (the one I use at the moment)
+
+## Installation
+ 
+ - Install via Ext-Manager
+ - Create sysfolder for the data and create books, categories etc. there
+ - set storage-pid (the sysfolder where the books are) via constant editor
+ - insert plugin for output
+ 
