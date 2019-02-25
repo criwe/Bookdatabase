@@ -1,5 +1,4 @@
 <?php
-
 /***************************************************************
  * Extension Manager/Repository config file for ext: "ext_bookdatabase"
  *
@@ -9,7 +8,6 @@
  * Only the data in the array - anything else is removed by next write.
  * "version" and "dependencies" must not be touched!
  ***************************************************************/
-
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Bookdatabase',
     'description' => 'Simple Bookdatabase',
@@ -21,10 +19,10 @@ $EM_CONF[$_EXTKEY] = [
     'uploadfolder' => '0',
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '0.0.2',
+    'version' => '0.0.3',
     'constraints' => [
         'depends' => [
-            'typo3' => '8.7.0-8.7.99',
+            'typo3' => '8.7.0-9.5.99',
         ],
         'conflicts' => [],
         'suggests' => [],

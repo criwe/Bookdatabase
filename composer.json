@@ -15,5 +15,11 @@
         "psr-4": {
             "Cw\\ExtBookdatabase\\": "Classes"
         }
-    }
+    },
+  "scripts": {
+    "post-autoload-dump": [
+      "mkdir -p .Build/Web/typo3conf/ext/",
+      "[ -L .Build/Web/typo3conf/ext/extension_builder ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/ext_bookdatabase"
+    ]
+  }
 }

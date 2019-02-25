@@ -18,7 +18,7 @@
             <f:translate key="tx_extbookdatabase_domain_model_book.description" />
         </th>
         <td>
-        {book.description}
+        <f:format.html>{book.description}</f:format.html>
         </td>
     </tr>
     <tr>
@@ -127,7 +127,11 @@
     </tr>
       <tr>
         <th><f:translate key="tx_extbookdatabase_domain_model_personborrowed" /></th>
-        <td><f:format.date format="d.m.Y">{book.borroweddate}</f:format.date></td>
+        <td>
+            <f:if condition="{book.borroweddate}"> 
+                <f:format.date format="d.m.Y">{book.borroweddate}</f:format.date>
+            </f:if>
+        </td>
     </tr>
   
     
