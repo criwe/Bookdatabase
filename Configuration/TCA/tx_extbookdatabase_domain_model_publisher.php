@@ -1,7 +1,7 @@
 <?php
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_publisher',
+        'title' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_publisher',
         'label' => 'publisher',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -17,7 +17,7 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => 'publisher',
-        'iconfile' => 'EXT:ext_bookdatabase/Resources/Public/Icons/tx_extbookdatabase_publisher.svg'
+        'iconfile' => 'EXT:extbookdatabase/Resources/Public/Icons/tx_extbookdatabase_publisher.svg'
     ],
     'interface' => [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, publisher',
@@ -110,7 +110,7 @@ return [
 
         'publisher' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_publisher.publisher',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_publisher.publisher',
             'config' => [
                 'type' => 'input',
                 'size' => 30,

@@ -1,5 +1,5 @@
 <?php
-namespace Cw\ExtBookdatabase\Tests\Unit\Domain\Model;
+namespace Cw\Extbookdatabase\Tests\Unit\Domain\Model;
 
 /**
  * Test case.
@@ -9,14 +9,14 @@ namespace Cw\ExtBookdatabase\Tests\Unit\Domain\Model;
 class BookconditionTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 {
     /**
-     * @var \Cw\ExtBookdatabase\Domain\Model\Bookcondition
+     * @var \Cw\Extbookdatabase\Domain\Model\Bookcondition
      */
     protected $subject = null;
 
     protected function setUp()
     {
         parent::setUp();
-        $this->subject = new \Cw\ExtBookdatabase\Domain\Model\Bookcondition();
+        $this->subject = new \Cw\Extbookdatabase\Domain\Model\Bookcondition();
     }
 
     protected function tearDown()

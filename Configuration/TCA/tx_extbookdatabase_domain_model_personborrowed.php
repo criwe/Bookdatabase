@@ -1,7 +1,7 @@
 <?php
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_personborrowed',
+        'title' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_personborrowed',
         'label' => 'personname',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -17,7 +17,7 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => 'personname,personadress,personemail',
-        'iconfile' => 'EXT:ext_bookdatabase/Resources/Public/Icons/tx_extbookdatabase_person.svg'
+        'iconfile' => 'EXT:extbookdatabase/Resources/Public/Icons/tx_extbookdatabase_person.svg'
     ],
     'interface' => [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, personname, personadress, personemail',
@@ -110,7 +110,7 @@ return [
 
         'personname' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_personborrowed.personname',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_personborrowed.personname',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -119,7 +119,7 @@ return [
         ],
         'personadress' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_personborrowed.personadress',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_personborrowed.personadress',
             'config' => [
                 'type' => 'text',
                 'cols' => 40,
@@ -129,7 +129,7 @@ return [
         ],
         'personemail' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_personborrowed.personemail',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_personborrowed.personemail',
             'config' => [
                 'type' => 'input',
                 'size' => 30,

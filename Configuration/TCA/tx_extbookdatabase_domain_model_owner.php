@@ -1,7 +1,7 @@
 <?php
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_owner',
+        'title' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_owner',
         'label' => 'owneritem',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -17,7 +17,7 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => 'owneritem,owneritemshortcut',
-        'iconfile' => 'EXT:ext_bookdatabase/Resources/Public/Icons/tx_extbookdatabase_owner.svg'
+        'iconfile' => 'EXT:extbookdatabase/Resources/Public/Icons/tx_extbookdatabase_owner.svg'
     ],
     'interface' => [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, owneritem, owneritemshortcut',
@@ -110,7 +110,7 @@ return [
 
         'owneritem' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_owner.owneritem',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_owner.owneritem',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -119,7 +119,7 @@ return [
         ],
         'owneritemshortcut' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_owner.owneritemshortcut',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_owner.owneritemshortcut',
             'config' => [
                 'type' => 'input',
                 'size' => 30,

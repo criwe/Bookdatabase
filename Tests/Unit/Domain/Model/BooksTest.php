@@ -1,6 +1,6 @@
 <?php
 
-namespace Itfoo\ExtBookdatabase\Tests\Unit\Domain\Model;
+namespace Itfoo\Extbookdatabase\Tests\Unit\Domain\Model;
 
 /***************************************************************
  *  Copyright notice
@@ -27,7 +27,7 @@ namespace Itfoo\ExtBookdatabase\Tests\Unit\Domain\Model;
  ***************************************************************/
 
 /**
- * Test case for class \Itfoo\ExtBookdatabase\Domain\Model\Books.
+ * Test case for class \Itfoo\Extbookdatabase\Domain\Model\Books.
  *
  * @copyright Copyright belongs to the respective authors
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
@@ -36,12 +36,12 @@ namespace Itfoo\ExtBookdatabase\Tests\Unit\Domain\Model;
  */
 class BooksTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
 	/**
-	 * @var \Itfoo\ExtBookdatabase\Domain\Model\Books
+	 * @var \Itfoo\Extbookdatabase\Domain\Model\Books
 	 */
 	protected $subject = NULL;
 
 	protected function setUp() {
-		$this->subject = new \Itfoo\ExtBookdatabase\Domain\Model\Books();
+		$this->subject = new \Itfoo\Extbookdatabase\Domain\Model\Books();
 	}
 
 	protected function tearDown() {
@@ -224,7 +224,7 @@ class BooksTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
 	 * @test
 	 */
 	public function setPublisherForPublisherSetsPublisher() {
-		$publisherFixture = new \Itfoo\ExtBookdatabase\Domain\Model\Publisher();
+		$publisherFixture = new \Itfoo\Extbookdatabase\Domain\Model\Publisher();
 		$this->subject->setPublisher($publisherFixture);
 
 		$this->assertAttributeEquals(
@@ -248,7 +248,7 @@ class BooksTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
 	 * @test
 	 */
 	public function setCategoryForCategorySetsCategory() {
-		$categoryFixture = new \Itfoo\ExtBookdatabase\Domain\Model\Category();
+		$categoryFixture = new \Itfoo\Extbookdatabase\Domain\Model\Category();
 		$this->subject->setCategory($categoryFixture);
 
 		$this->assertAttributeEquals(

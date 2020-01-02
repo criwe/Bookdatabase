@@ -1,5 +1,5 @@
 <?php
-namespace Cw\ExtBookdatabase\Domain\Model;
+namespace Cw\Extbookdatabase\Domain\Model;
 
 /***************************************************************
  *
@@ -122,63 +122,63 @@ class Book extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * publisher
      * 
-     * @var \Cw\ExtBookdatabase\Domain\Model\Publisher
+     * @var \Cw\Extbookdatabase\Domain\Model\Publisher
      */
     protected $publisher = NULL;
 
     /**
      * category
      * 
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Cw\ExtBookdatabase\Domain\Model\Category>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Cw\Extbookdatabase\Domain\Model\Category>
      */
     protected $category = NULL;
 
     /**
      * location
      * 
-     * @var \Cw\ExtBookdatabase\Domain\Model\Location
+     * @var \Cw\Extbookdatabase\Domain\Model\Location
      */
     protected $location = NULL;
 
     /**
      * owner
      * 
-     * @var \Cw\ExtBookdatabase\Domain\Model\Owner
+     * @var \Cw\Extbookdatabase\Domain\Model\Owner
      */
     protected $owner = NULL;
 
     /**
      * type
      * 
-     * @var \Cw\ExtBookdatabase\Domain\Model\Type
+     * @var \Cw\Extbookdatabase\Domain\Model\Type
      */
     protected $type = NULL;
 
     /**
      * language
      * 
-     * @var \Cw\ExtBookdatabase\Domain\Model\Language
+     * @var \Cw\Extbookdatabase\Domain\Model\Language
      */
     protected $language = NULL;
 
     /**
      * bookcondition
      * 
-     * @var \Cw\ExtBookdatabase\Domain\Model\Bookcondition
+     * @var \Cw\Extbookdatabase\Domain\Model\Bookcondition
      */
     protected $bookcondition = NULL;
 
     /**
      * bookseries
      * 
-     * @var \Cw\ExtBookdatabase\Domain\Model\Bookseries
+     * @var \Cw\Extbookdatabase\Domain\Model\Bookseries
      */
     protected $bookseries = NULL;
 
     /**
      * personborrowed
      * 
-     * @var \Cw\ExtBookdatabase\Domain\Model\Personborrowed
+     * @var \Cw\Extbookdatabase\Domain\Model\Personborrowed
      */
     protected $personborrowed = NULL;
 
@@ -437,7 +437,7 @@ class Book extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the publisher
      * 
-     * @return \Cw\ExtBookdatabase\Domain\Model\Publisher $publisher
+     * @return \Cw\Extbookdatabase\Domain\Model\Publisher $publisher
      */
     public function getPublisher()
     {
@@ -447,10 +447,10 @@ class Book extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the publisher
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Publisher $publisher
+     * @param \Cw\Extbookdatabase\Domain\Model\Publisher $publisher
      * @return void
      */
-    public function setPublisher(\Cw\ExtBookdatabase\Domain\Model\Publisher $publisher)
+    public function setPublisher(\Cw\Extbookdatabase\Domain\Model\Publisher $publisher)
     {
         $this->publisher = $publisher;
     }
@@ -458,10 +458,10 @@ class Book extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Adds a Category
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Category $category
+     * @param \Cw\Extbookdatabase\Domain\Model\Category $category
      * @return void
      */
-    public function addCategory(\Cw\ExtBookdatabase\Domain\Model\Category $category)
+    public function addCategory(\Cw\Extbookdatabase\Domain\Model\Category $category)
     {
         $this->category->attach($category);
     }
@@ -469,10 +469,10 @@ class Book extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Removes a Category
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Category $categoryToRemove The Category to be removed
+     * @param \Cw\Extbookdatabase\Domain\Model\Category $categoryToRemove The Category to be removed
      * @return void
      */
-    public function removeCategory(\Cw\ExtBookdatabase\Domain\Model\Category $categoryToRemove)
+    public function removeCategory(\Cw\Extbookdatabase\Domain\Model\Category $categoryToRemove)
     {
         $this->category->detach($categoryToRemove);
     }
@@ -480,7 +480,7 @@ class Book extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the category
      * 
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Cw\ExtBookdatabase\Domain\Model\Category> $category
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Cw\Extbookdatabase\Domain\Model\Category> $category
      */
     public function getCategory()
     {
@@ -490,7 +490,7 @@ class Book extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the category
      * 
-     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Cw\ExtBookdatabase\Domain\Model\Category> $category
+     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Cw\Extbookdatabase\Domain\Model\Category> $category
      * @return void
      */
     public function setCategory(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $category)
@@ -501,7 +501,7 @@ class Book extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the location
      * 
-     * @return \Cw\ExtBookdatabase\Domain\Model\Location $location
+     * @return \Cw\Extbookdatabase\Domain\Model\Location $location
      */
     public function getLocation()
     {
@@ -511,10 +511,10 @@ class Book extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the location
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Location $location
+     * @param \Cw\Extbookdatabase\Domain\Model\Location $location
      * @return void
      */
-    public function setLocation(\Cw\ExtBookdatabase\Domain\Model\Location $location)
+    public function setLocation(\Cw\Extbookdatabase\Domain\Model\Location $location)
     {
         $this->location = $location;
     }
@@ -522,7 +522,7 @@ class Book extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the owner
      * 
-     * @return \Cw\ExtBookdatabase\Domain\Model\Owner $owner
+     * @return \Cw\Extbookdatabase\Domain\Model\Owner $owner
      */
     public function getOwner()
     {
@@ -532,10 +532,10 @@ class Book extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the owner
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Owner $owner
+     * @param \Cw\Extbookdatabase\Domain\Model\Owner $owner
      * @return void
      */
-    public function setOwner(\Cw\ExtBookdatabase\Domain\Model\Owner $owner)
+    public function setOwner(\Cw\Extbookdatabase\Domain\Model\Owner $owner)
     {
         $this->owner = $owner;
     }
@@ -543,7 +543,7 @@ class Book extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the type
      * 
-     * @return \Cw\ExtBookdatabase\Domain\Model\Type $type
+     * @return \Cw\Extbookdatabase\Domain\Model\Type $type
      */
     public function getType()
     {
@@ -553,10 +553,10 @@ class Book extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the type
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Type $type
+     * @param \Cw\Extbookdatabase\Domain\Model\Type $type
      * @return void
      */
-    public function setType(\Cw\ExtBookdatabase\Domain\Model\Type $type)
+    public function setType(\Cw\Extbookdatabase\Domain\Model\Type $type)
     {
         $this->type = $type;
     }
@@ -564,7 +564,7 @@ class Book extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the language
      * 
-     * @return \Cw\ExtBookdatabase\Domain\Model\Language $language
+     * @return \Cw\Extbookdatabase\Domain\Model\Language $language
      */
     public function getLanguage()
     {
@@ -574,10 +574,10 @@ class Book extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the language
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Language $language
+     * @param \Cw\Extbookdatabase\Domain\Model\Language $language
      * @return void
      */
-    public function setLanguage(\Cw\ExtBookdatabase\Domain\Model\Language $language)
+    public function setLanguage(\Cw\Extbookdatabase\Domain\Model\Language $language)
     {
         $this->language = $language;
     }
@@ -585,7 +585,7 @@ class Book extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the bookcondition
      * 
-     * @return \Cw\ExtBookdatabase\Domain\Model\Bookcondition $bookcondition
+     * @return \Cw\Extbookdatabase\Domain\Model\Bookcondition $bookcondition
      */
     public function getBookcondition()
     {
@@ -595,10 +595,10 @@ class Book extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the bookcondition
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Bookcondition $bookcondition
+     * @param \Cw\Extbookdatabase\Domain\Model\Bookcondition $bookcondition
      * @return void
      */
-    public function setBookcondition(\Cw\ExtBookdatabase\Domain\Model\Bookcondition $bookcondition)
+    public function setBookcondition(\Cw\Extbookdatabase\Domain\Model\Bookcondition $bookcondition)
     {
         $this->bookcondition = $bookcondition;
     }
@@ -606,7 +606,7 @@ class Book extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the bookseries
      * 
-     * @return \Cw\ExtBookdatabase\Domain\Model\Bookseries $bookseries
+     * @return \Cw\Extbookdatabase\Domain\Model\Bookseries $bookseries
      */
     public function getBookseries()
     {
@@ -616,10 +616,10 @@ class Book extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the bookseries
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Bookseries $bookseries
+     * @param \Cw\Extbookdatabase\Domain\Model\Bookseries $bookseries
      * @return void
      */
-    public function setBookseries(\Cw\ExtBookdatabase\Domain\Model\Bookseries $bookseries)
+    public function setBookseries(\Cw\Extbookdatabase\Domain\Model\Bookseries $bookseries)
     {
         $this->bookseries = $bookseries;
     }
@@ -627,7 +627,7 @@ class Book extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the personborrowed
      * 
-     * @return \Cw\ExtBookdatabase\Domain\Model\Personborrowed $personborrowed
+     * @return \Cw\Extbookdatabase\Domain\Model\Personborrowed $personborrowed
      */
     public function getPersonborrowed()
     {
@@ -637,10 +637,10 @@ class Book extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the personborrowed
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Personborrowed $personborrowed
+     * @param \Cw\Extbookdatabase\Domain\Model\Personborrowed $personborrowed
      * @return void
      */
-    public function setPersonborrowed(\Cw\ExtBookdatabase\Domain\Model\Personborrowed $personborrowed)
+    public function setPersonborrowed(\Cw\Extbookdatabase\Domain\Model\Personborrowed $personborrowed)
     {
         $this->personborrowed = $personborrowed;
     }

@@ -1,5 +1,5 @@
 <?php
-namespace Cw\ExtBookdatabase\Controller;
+namespace Cw\Extbookdatabase\Controller;
 
 /***************************************************************
  *
@@ -56,10 +56,10 @@ class PublisherController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
     /**
      * action show
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Publisher $publisher
+     * @param \Cw\Extbookdatabase\Domain\Model\Publisher $publisher
      * @return void
      */
-    public function showAction(\Cw\ExtBookdatabase\Domain\Model\Publisher $publisher)
+    public function showAction(\Cw\Extbookdatabase\Domain\Model\Publisher $publisher)
     {
         $this->view->assign('publisher', $publisher);
     }
@@ -67,11 +67,11 @@ class PublisherController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
     /**
      * action new
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Publisher $newPublisher
+     * @param \Cw\Extbookdatabase\Domain\Model\Publisher $newPublisher
      * @ignorevalidation $newPublisher
      * @return void
      */
-    public function newAction(\Cw\ExtBookdatabase\Domain\Model\Publisher $newPublisher = NULL)
+    public function newAction(\Cw\Extbookdatabase\Domain\Model\Publisher $newPublisher = NULL)
     {
         $this->view->assign('newPublisher', $newPublisher);
     }
@@ -79,10 +79,10 @@ class PublisherController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
     /**
      * action create
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Publisher $newPublisher
+     * @param \Cw\Extbookdatabase\Domain\Model\Publisher $newPublisher
      * @return void
      */
-    public function createAction(\Cw\ExtBookdatabase\Domain\Model\Publisher $newPublisher)
+    public function createAction(\Cw\Extbookdatabase\Domain\Model\Publisher $newPublisher)
     {
         $this->addFlashMessage('The object was created. Please be aware that this action is publicly accessible unless you implement an access check. See <a href="http://wiki.typo3.org/T3Doc/Extension_Builder/Using_the_Extension_Builder#1._Model_the_domain" target="_blank">Wiki</a>', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::ERROR);
         $this->publisherRepository->add($newPublisher);
@@ -92,11 +92,11 @@ class PublisherController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
     /**
      * action edit
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Publisher $publisher
+     * @param \Cw\Extbookdatabase\Domain\Model\Publisher $publisher
      * @ignorevalidation $publisher
      * @return void
      */
-    public function editAction(\Cw\ExtBookdatabase\Domain\Model\Publisher $publisher)
+    public function editAction(\Cw\Extbookdatabase\Domain\Model\Publisher $publisher)
     {
         $this->view->assign('publisher', $publisher);
     }
@@ -104,10 +104,10 @@ class PublisherController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
     /**
      * action update
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Publisher $publisher
+     * @param \Cw\Extbookdatabase\Domain\Model\Publisher $publisher
      * @return void
      */
-    public function updateAction(\Cw\ExtBookdatabase\Domain\Model\Publisher $publisher)
+    public function updateAction(\Cw\Extbookdatabase\Domain\Model\Publisher $publisher)
     {
         $this->addFlashMessage('The object was updated. Please be aware that this action is publicly accessible unless you implement an access check. See <a href="http://wiki.typo3.org/T3Doc/Extension_Builder/Using_the_Extension_Builder#1._Model_the_domain" target="_blank">Wiki</a>', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::ERROR);
         $this->publisherRepository->update($publisher);
@@ -117,10 +117,10 @@ class PublisherController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
     /**
      * action delete
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Publisher $publisher
+     * @param \Cw\Extbookdatabase\Domain\Model\Publisher $publisher
      * @return void
      */
-    public function deleteAction(\Cw\ExtBookdatabase\Domain\Model\Publisher $publisher)
+    public function deleteAction(\Cw\Extbookdatabase\Domain\Model\Publisher $publisher)
     {
         $this->addFlashMessage('The object was deleted. Please be aware that this action is publicly accessible unless you implement an access check. See <a href="http://wiki.typo3.org/T3Doc/Extension_Builder/Using_the_Extension_Builder#1._Model_the_domain" target="_blank">Wiki</a>', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::ERROR);
         $this->publisherRepository->remove($publisher);

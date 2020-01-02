@@ -1,5 +1,5 @@
 <?php
-namespace Cw\ExtBookdatabase\Controller;
+namespace Cw\Extbookdatabase\Controller;
 
 /***************************************************************
  *
@@ -56,10 +56,10 @@ class CategoryController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
     /**
      * action show
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Category $category
+     * @param \Cw\Extbookdatabase\Domain\Model\Category $category
      * @return void
      */
-    public function showAction(\Cw\ExtBookdatabase\Domain\Model\Category $category)
+    public function showAction(\Cw\Extbookdatabase\Domain\Model\Category $category)
     {
         $this->view->assign('category', $category);
     }
@@ -67,11 +67,11 @@ class CategoryController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
     /**
      * action new
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Category $newCategory
+     * @param \Cw\Extbookdatabase\Domain\Model\Category $newCategory
      * @ignorevalidation $newCategory
      * @return void
      */
-    public function newAction(\Cw\ExtBookdatabase\Domain\Model\Category $newCategory = NULL)
+    public function newAction(\Cw\Extbookdatabase\Domain\Model\Category $newCategory = NULL)
     {
         $this->view->assign('newCategory', $newCategory);
     }
@@ -79,10 +79,10 @@ class CategoryController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
     /**
      * action create
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Category $newCategory
+     * @param \Cw\Extbookdatabase\Domain\Model\Category $newCategory
      * @return void
      */
-    public function createAction(\Cw\ExtBookdatabase\Domain\Model\Category $newCategory)
+    public function createAction(\Cw\Extbookdatabase\Domain\Model\Category $newCategory)
     {
         $this->addFlashMessage('The object was created. Please be aware that this action is publicly accessible unless you implement an access check. See <a href="http://wiki.typo3.org/T3Doc/Extension_Builder/Using_the_Extension_Builder#1._Model_the_domain" target="_blank">Wiki</a>', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::ERROR);
         $this->categoryRepository->add($newCategory);
@@ -92,11 +92,11 @@ class CategoryController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
     /**
      * action edit
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Category $category
+     * @param \Cw\Extbookdatabase\Domain\Model\Category $category
      * @ignorevalidation $category
      * @return void
      */
-    public function editAction(\Cw\ExtBookdatabase\Domain\Model\Category $category)
+    public function editAction(\Cw\Extbookdatabase\Domain\Model\Category $category)
     {
         $this->view->assign('category', $category);
     }
@@ -104,10 +104,10 @@ class CategoryController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
     /**
      * action update
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Category $category
+     * @param \Cw\Extbookdatabase\Domain\Model\Category $category
      * @return void
      */
-    public function updateAction(\Cw\ExtBookdatabase\Domain\Model\Category $category)
+    public function updateAction(\Cw\Extbookdatabase\Domain\Model\Category $category)
     {
         $this->addFlashMessage('The object was updated. Please be aware that this action is publicly accessible unless you implement an access check. See <a href="http://wiki.typo3.org/T3Doc/Extension_Builder/Using_the_Extension_Builder#1._Model_the_domain" target="_blank">Wiki</a>', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::ERROR);
         $this->categoryRepository->update($category);
@@ -117,10 +117,10 @@ class CategoryController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
     /**
      * action delete
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Category $category
+     * @param \Cw\Extbookdatabase\Domain\Model\Category $category
      * @return void
      */
-    public function deleteAction(\Cw\ExtBookdatabase\Domain\Model\Category $category)
+    public function deleteAction(\Cw\Extbookdatabase\Domain\Model\Category $category)
     {
         $this->addFlashMessage('The object was deleted. Please be aware that this action is publicly accessible unless you implement an access check. See <a href="http://wiki.typo3.org/T3Doc/Extension_Builder/Using_the_Extension_Builder#1._Model_the_domain" target="_blank">Wiki</a>', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::ERROR);
         $this->categoryRepository->remove($category);

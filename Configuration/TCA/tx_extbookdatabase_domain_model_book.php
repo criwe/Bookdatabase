@@ -1,7 +1,7 @@
 <?php
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book',
+        'title' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book',
         'label' => 'title',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -18,7 +18,7 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => 'title,author,translator,description,isbn,publishingyear,edition,keywords,signed,soldout,borroweddate,publisher,category,location,owner,type,language,bookcondition,bookseries,personborrowed',
-        'iconfile' => 'EXT:ext_bookdatabase/Resources/Public/Icons/tx_extbookdatabase_book.svg'
+        'iconfile' => 'EXT:extbookdatabase/Resources/Public/Icons/tx_extbookdatabase_book.svg'
     ],
     'interface' => [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, author, translator, description, isbn, publishingyear, edition, keywords, signed, soldout, publisher, category, location, owner, type, language, bookcondition, bookseries, personborrowed, borroweddate',
@@ -52,15 +52,15 @@ return [
     'types' => [
         '1' => [
             'showitem' => 
-            '--div--;LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabgeneral, sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, author, 
-            --palette--;LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabempty;langtranslator, 
-            description, --palette--;LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabempty;publisherisbn, 
-            --palette--;LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabempty;pubyearedition, 
-            --palette--;LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabempty;signedsoldout,
+            '--div--;LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabgeneral, sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, author, 
+            --palette--;LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabempty;langtranslator, 
+            description, --palette--;LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabempty;publisherisbn, 
+            --palette--;LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabempty;pubyearedition, 
+            --palette--;LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabempty;signedsoldout,
             bookseries, bookcondition, 
-            --div--;LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabclassification, category, type, keywords,  
-            --div--;LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabwhere, location, owner, 
-            --div--;LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabborrowed, personborrowed, borroweddate, 
+            --div--;LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabclassification, category, type, keywords,  
+            --div--;LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabwhere, location, owner, 
+            --div--;LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_tabborrowed, personborrowed, borroweddate, 
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'], 
     ],
     'columns' => [
@@ -148,7 +148,7 @@ return [
 
         'title' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.title',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.title',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -157,7 +157,7 @@ return [
         ],
         'author' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.author',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.author',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -166,7 +166,7 @@ return [
         ],
         'translator' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.translator',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.translator',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -175,7 +175,7 @@ return [
         ],
         'description' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.description',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.description',
             'config' => [
                 'type' => 'text',
                 'cols' => 40,
@@ -186,7 +186,7 @@ return [
         ],
         'isbn' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.isbn',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.isbn',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -195,7 +195,7 @@ return [
         ],
         'publishingyear' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.publishingyear',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.publishingyear',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -204,7 +204,7 @@ return [
         ],
         'edition' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.edition',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.edition',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -213,7 +213,7 @@ return [
         ],
         'keywords' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.keywords',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.keywords',
             'config' => [
                 'type' => 'text',
                 'cols' => 40,
@@ -223,7 +223,7 @@ return [
         ],
         'signed' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.signed',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.signed',
             'config' => [
                 'type' => 'check',
                 'items' => [
@@ -236,7 +236,7 @@ return [
         ],
         'soldout' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.soldout',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.soldout',
             'config' => [
                 'type' => 'check',
                 'items' => [
@@ -249,7 +249,7 @@ return [
         ],
         'borroweddate' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.borroweddate',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.borroweddate',
             'config' => [
                 'type' => 'input',
                 'size' => 7,
@@ -259,7 +259,7 @@ return [
         ],
         'publisher' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.publisher',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.publisher',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -270,7 +270,7 @@ return [
         ],
         'category' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.category',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.category',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
@@ -312,7 +312,7 @@ return [
         ],
         'location' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.location',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.location',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -326,7 +326,7 @@ return [
         ],
         'owner' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.owner',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.owner',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -340,7 +340,7 @@ return [
         ],
         'type' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.type',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.type',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -354,7 +354,7 @@ return [
         ],
         'language' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.language',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.language',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -365,7 +365,7 @@ return [
         ],
         'bookcondition' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.bookcondition',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.bookcondition',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -379,7 +379,7 @@ return [
         ],
         'bookseries' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.bookseries',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.bookseries',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -393,7 +393,7 @@ return [
         ],
         'personborrowed' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.personborrowed',
+            'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.personborrowed',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',

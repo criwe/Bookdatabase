@@ -1,5 +1,5 @@
 <?php
-namespace Itfoo\ExtBookdatabase\Tests\Unit\Controller;
+namespace Itfoo\Extbookdatabase\Tests\Unit\Controller;
 /***************************************************************
  *  Copyright notice
  *
@@ -25,19 +25,19 @@ namespace Itfoo\ExtBookdatabase\Tests\Unit\Controller;
  ***************************************************************/
 
 /**
- * Test case for class Itfoo\ExtBookdatabase\Controller\TypeController.
+ * Test case for class Itfoo\Extbookdatabase\Controller\TypeController.
  *
  * @author Christoph Werner <info@itfoo.de>
  */
 class TypeControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
 
 	/**
-	 * @var \Itfoo\ExtBookdatabase\Controller\TypeController
+	 * @var \Itfoo\Extbookdatabase\Controller\TypeController
 	 */
 	protected $subject = NULL;
 
 	protected function setUp() {
-		$this->subject = $this->getMock('Itfoo\\ExtBookdatabase\\Controller\\TypeController', array('redirect', 'forward', 'addFlashMessage'), array(), '', FALSE);
+		$this->subject = $this->getMock('Itfoo\\Extbookdatabase\\Controller\\TypeController', array('redirect', 'forward', 'addFlashMessage'), array(), '', FALSE);
 	}
 
 	protected function tearDown() {
@@ -66,7 +66,7 @@ class TypeControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
 	 * @test
 	 */
 	public function showActionAssignsTheGivenTypeToView() {
-		$type = new \Itfoo\ExtBookdatabase\Domain\Model\Type();
+		$type = new \Itfoo\Extbookdatabase\Domain\Model\Type();
 
 		$view = $this->getMock('TYPO3\\CMS\\Extbase\\Mvc\\View\\ViewInterface');
 		$this->inject($this->subject, 'view', $view);
@@ -79,7 +79,7 @@ class TypeControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
 	 * @test
 	 */
 	public function newActionAssignsTheGivenTypeToView() {
-		$type = new \Itfoo\ExtBookdatabase\Domain\Model\Type();
+		$type = new \Itfoo\Extbookdatabase\Domain\Model\Type();
 
 		$view = $this->getMock('TYPO3\\CMS\\Extbase\\Mvc\\View\\ViewInterface');
 		$view->expects($this->once())->method('assign')->with('newType', $type);
@@ -92,7 +92,7 @@ class TypeControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
 	 * @test
 	 */
 	public function createActionAddsTheGivenTypeToTypeRepository() {
-		$type = new \Itfoo\ExtBookdatabase\Domain\Model\Type();
+		$type = new \Itfoo\Extbookdatabase\Domain\Model\Type();
 
 		$typeRepository = $this->getMock('', array('add'), array(), '', FALSE);
 		$typeRepository->expects($this->once())->method('add')->with($type);
@@ -105,7 +105,7 @@ class TypeControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
 	 * @test
 	 */
 	public function editActionAssignsTheGivenTypeToView() {
-		$type = new \Itfoo\ExtBookdatabase\Domain\Model\Type();
+		$type = new \Itfoo\Extbookdatabase\Domain\Model\Type();
 
 		$view = $this->getMock('TYPO3\\CMS\\Extbase\\Mvc\\View\\ViewInterface');
 		$this->inject($this->subject, 'view', $view);
@@ -118,7 +118,7 @@ class TypeControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
 	 * @test
 	 */
 	public function updateActionUpdatesTheGivenTypeInTypeRepository() {
-		$type = new \Itfoo\ExtBookdatabase\Domain\Model\Type();
+		$type = new \Itfoo\Extbookdatabase\Domain\Model\Type();
 
 		$typeRepository = $this->getMock('', array('update'), array(), '', FALSE);
 		$typeRepository->expects($this->once())->method('update')->with($type);
@@ -131,7 +131,7 @@ class TypeControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
 	 * @test
 	 */
 	public function deleteActionRemovesTheGivenTypeFromTypeRepository() {
-		$type = new \Itfoo\ExtBookdatabase\Domain\Model\Type();
+		$type = new \Itfoo\Extbookdatabase\Domain\Model\Type();
 
 		$typeRepository = $this->getMock('', array('remove'), array(), '', FALSE);
 		$typeRepository->expects($this->once())->method('remove')->with($type);

@@ -1,5 +1,5 @@
 <?php
-namespace Cw\ExtBookdatabase\Controller;
+namespace Cw\Extbookdatabase\Controller;
 
 /***************************************************************
  *
@@ -45,11 +45,11 @@ class BookconditionController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCo
     /**
      * action new
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Bookcondition $newBookcondition
+     * @param \Cw\Extbookdatabase\Domain\Model\Bookcondition $newBookcondition
      * @ignorevalidation $newBookcondition
      * @return void
      */
-    public function newAction(\Cw\ExtBookdatabase\Domain\Model\Bookcondition $newBookcondition = NULL)
+    public function newAction(\Cw\Extbookdatabase\Domain\Model\Bookcondition $newBookcondition = NULL)
     {
         $this->view->assign('newBookcondition', $newBookcondition);
     }
@@ -57,10 +57,10 @@ class BookconditionController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCo
     /**
      * action create
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Bookcondition $newBookcondition
+     * @param \Cw\Extbookdatabase\Domain\Model\Bookcondition $newBookcondition
      * @return void
      */
-    public function createAction(\Cw\ExtBookdatabase\Domain\Model\Bookcondition $newBookcondition)
+    public function createAction(\Cw\Extbookdatabase\Domain\Model\Bookcondition $newBookcondition)
     {
         $this->addFlashMessage('The object was created. Please be aware that this action is publicly accessible unless you implement an access check. See <a href="http://wiki.typo3.org/T3Doc/Extension_Builder/Using_the_Extension_Builder#1._Model_the_domain" target="_blank">Wiki</a>', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::ERROR);
         $this->bookconditionRepository->add($newBookcondition);

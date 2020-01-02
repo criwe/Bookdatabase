@@ -1,5 +1,5 @@
 <?php
-namespace Cw\ExtBookdatabase\Controller;
+namespace Cw\Extbookdatabase\Controller;
 
 /***************************************************************
  *
@@ -56,10 +56,10 @@ class OwnerController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     /**
      * action show
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Owner $owner
+     * @param \Cw\Extbookdatabase\Domain\Model\Owner $owner
      * @return void
      */
-    public function showAction(\Cw\ExtBookdatabase\Domain\Model\Owner $owner)
+    public function showAction(\Cw\Extbookdatabase\Domain\Model\Owner $owner)
     {
         $this->view->assign('owner', $owner);
     }
@@ -67,11 +67,11 @@ class OwnerController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     /**
      * action new
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Owner $newOwner
+     * @param \Cw\Extbookdatabase\Domain\Model\Owner $newOwner
      * @ignorevalidation $newOwner
      * @return void
      */
-    public function newAction(\Cw\ExtBookdatabase\Domain\Model\Owner $newOwner = NULL)
+    public function newAction(\Cw\Extbookdatabase\Domain\Model\Owner $newOwner = NULL)
     {
         $this->view->assign('newOwner', $newOwner);
     }
@@ -79,10 +79,10 @@ class OwnerController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     /**
      * action create
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Owner $newOwner
+     * @param \Cw\Extbookdatabase\Domain\Model\Owner $newOwner
      * @return void
      */
-    public function createAction(\Cw\ExtBookdatabase\Domain\Model\Owner $newOwner)
+    public function createAction(\Cw\Extbookdatabase\Domain\Model\Owner $newOwner)
     {
         $this->addFlashMessage('The object was created. Please be aware that this action is publicly accessible unless you implement an access check. See <a href="http://wiki.typo3.org/T3Doc/Extension_Builder/Using_the_Extension_Builder#1._Model_the_domain" target="_blank">Wiki</a>', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::ERROR);
         $this->ownerRepository->add($newOwner);

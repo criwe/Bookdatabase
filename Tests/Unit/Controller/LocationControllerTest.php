@@ -1,5 +1,5 @@
 <?php
-namespace Cw\ExtBookdatabase\Tests\Unit\Controller;
+namespace Cw\Extbookdatabase\Tests\Unit\Controller;
 
 /**
  * Test case.
@@ -9,14 +9,14 @@ namespace Cw\ExtBookdatabase\Tests\Unit\Controller;
 class LocationControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 {
     /**
-     * @var \Cw\ExtBookdatabase\Controller\LocationController
+     * @var \Cw\Extbookdatabase\Controller\LocationController
      */
     protected $subject = null;
 
     protected function setUp()
     {
         parent::setUp();
-        $this->subject = $this->getMockBuilder(\Cw\ExtBookdatabase\Controller\LocationController::class)
+        $this->subject = $this->getMockBuilder(\Cw\Extbookdatabase\Controller\LocationController::class)
             ->setMethods(['redirect', 'forward', 'addFlashMessage'])
             ->disableOriginalConstructor()
             ->getMock();
@@ -56,7 +56,7 @@ class LocationControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function showActionAssignsTheGivenLocationToView()
     {
-        $location = new \Cw\ExtBookdatabase\Domain\Model\Location();
+        $location = new \Cw\Extbookdatabase\Domain\Model\Location();
 
         $view = $this->getMockBuilder(\TYPO3\CMS\Extbase\Mvc\View\ViewInterface::class)->getMock();
         $this->inject($this->subject, 'view', $view);
@@ -70,7 +70,7 @@ class LocationControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function createActionAddsTheGivenLocationToLocationRepository()
     {
-        $location = new \Cw\ExtBookdatabase\Domain\Model\Location();
+        $location = new \Cw\Extbookdatabase\Domain\Model\Location();
 
         $locationRepository = $this->getMockBuilder(\::class)
             ->setMethods(['add'])

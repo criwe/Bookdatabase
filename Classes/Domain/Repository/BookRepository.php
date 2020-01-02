@@ -1,5 +1,5 @@
 <?php
-namespace Cw\ExtBookdatabase\Domain\Repository;
+namespace Cw\Extbookdatabase\Domain\Repository;
 
 /***************************************************************
  *

@@ -1,5 +1,5 @@
 <?php
-namespace Cw\ExtBookdatabase\Controller;
+namespace Cw\Extbookdatabase\Controller;
 
 /***************************************************************
  *
@@ -56,10 +56,10 @@ class LocationController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
     /**
      * action show
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Location $location
+     * @param \Cw\Extbookdatabase\Domain\Model\Location $location
      * @return void
      */
-    public function showAction(\Cw\ExtBookdatabase\Domain\Model\Location $location)
+    public function showAction(\Cw\Extbookdatabase\Domain\Model\Location $location)
     {
         $this->view->assign('location', $location);
     }
@@ -67,11 +67,11 @@ class LocationController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
     /**
      * action new
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Location $newLocation
+     * @param \Cw\Extbookdatabase\Domain\Model\Location $newLocation
      * @ignorevalidation $newLocation
      * @return void
      */
-    public function newAction(\Cw\ExtBookdatabase\Domain\Model\Location $newLocation = NULL)
+    public function newAction(\Cw\Extbookdatabase\Domain\Model\Location $newLocation = NULL)
     {
         $this->view->assign('newLocation', $newLocation);
     }
@@ -79,10 +79,10 @@ class LocationController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
     /**
      * action create
      * 
-     * @param \Cw\ExtBookdatabase\Domain\Model\Location $newLocation
+     * @param \Cw\Extbookdatabase\Domain\Model\Location $newLocation
      * @return void
      */
-    public function createAction(\Cw\ExtBookdatabase\Domain\Model\Location $newLocation)
+    public function createAction(\Cw\Extbookdatabase\Domain\Model\Location $newLocation)
     {
         $this->addFlashMessage('The object was created. Please be aware that this action is publicly accessible unless you implement an access check. See <a href="http://wiki.typo3.org/T3Doc/Extension_Builder/Using_the_Extension_Builder#1._Model_the_domain" target="_blank">Wiki</a>', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::ERROR);
         $this->locationRepository->add($newLocation);

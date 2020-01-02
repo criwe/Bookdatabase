@@ -6,7 +6,7 @@ call_user_func(
     {
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-            'Cw.ExtBookdatabase',
+            'Cw.Extbookdatabase',
             'Booklist',
             [
                 'Book' => 'list, show',
@@ -33,9 +33,9 @@ call_user_func(
             wizards.newContentElement.wizardItems.plugins {
                 elements {
                     booklist {
-                        iconIdentifier = ext_bookdatabase-plugin-booklist
-                        title = LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_ext_bookdatabase_booklist.name
-                        description = LLL:EXT:ext_bookdatabase/Resources/Private/Language/locallang_db.xlf:tx_ext_bookdatabase_booklist.description
+                        iconIdentifier = extbookdatabase-plugin-booklist
+                        title = LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_ext_bookdatabase_booklist.name
+                        description = LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_ext_bookdatabase_booklist.description
                         tt_content_defValues {
                             CType = list
                             list_type = extbookdatabase_booklist
@@ -49,9 +49,9 @@ call_user_func(
 		$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
 		
 			$iconRegistry->registerIcon(
-				'ext_bookdatabase-plugin-booklist',
+				'extbookdatabase-plugin-booklist',
 				\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-				['source' => 'EXT:ext_bookdatabase/Resources/Public/Icons/user_plugin_booklist.svg']
+				['source' => 'EXT:extbookdatabase/Resources/Public/Icons/user_plugin_booklist.svg']
 			);
 		
     }

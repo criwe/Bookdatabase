@@ -1,5 +1,5 @@
 <?php
-namespace Itfoo\ExtBookdatabase\Tests\Unit\Controller;
+namespace Itfoo\Extbookdatabase\Tests\Unit\Controller;
 /***************************************************************
  *  Copyright notice
  *
@@ -25,19 +25,19 @@ namespace Itfoo\ExtBookdatabase\Tests\Unit\Controller;
  ***************************************************************/
 
 /**
- * Test case for class Itfoo\ExtBookdatabase\Controller\BooksController.
+ * Test case for class Itfoo\Extbookdatabase\Controller\BooksController.
  *
  * @author Christoph Werner <info@itfoo.de>
  */
 class BooksControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
 
 	/**
-	 * @var \Itfoo\ExtBookdatabase\Controller\BooksController
+	 * @var \Itfoo\Extbookdatabase\Controller\BooksController
 	 */
 	protected $subject = NULL;
 
 	protected function setUp() {
-		$this->subject = $this->getMock('Itfoo\\ExtBookdatabase\\Controller\\BooksController', array('redirect', 'forward', 'addFlashMessage'), array(), '', FALSE);
+		$this->subject = $this->getMock('Itfoo\\Extbookdatabase\\Controller\\BooksController', array('redirect', 'forward', 'addFlashMessage'), array(), '', FALSE);
 	}
 
 	protected function tearDown() {
@@ -51,7 +51,7 @@ class BooksControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
 
 		$allBookss = $this->getMock('TYPO3\\CMS\\Extbase\\Persistence\\ObjectStorage', array(), array(), '', FALSE);
 
-		$booksRepository = $this->getMock('Itfoo\\ExtBookdatabase\\Domain\\Repository\\BooksRepository', array('findAll'), array(), '', FALSE);
+		$booksRepository = $this->getMock('Itfoo\\Extbookdatabase\\Domain\\Repository\\BooksRepository', array('findAll'), array(), '', FALSE);
 		$booksRepository->expects($this->once())->method('findAll')->will($this->returnValue($allBookss));
 		$this->inject($this->subject, 'booksRepository', $booksRepository);
 
@@ -66,7 +66,7 @@ class BooksControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
 	 * @test
 	 */
 	public function showActionAssignsTheGivenBooksToView() {
-		$books = new \Itfoo\ExtBookdatabase\Domain\Model\Books();
+		$books = new \Itfoo\Extbookdatabase\Domain\Model\Books();
 
 		$view = $this->getMock('TYPO3\\CMS\\Extbase\\Mvc\\View\\ViewInterface');
 		$this->inject($this->subject, 'view', $view);

@@ -1,5 +1,5 @@
 <?php
-namespace Cw\ExtBookdatabase\Tests\Unit\Controller;
+namespace Cw\Extbookdatabase\Tests\Unit\Controller;
 
 /**
  * Test case.
@@ -9,14 +9,14 @@ namespace Cw\ExtBookdatabase\Tests\Unit\Controller;
 class BookControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 {
     /**
-     * @var \Cw\ExtBookdatabase\Controller\BookController
+     * @var \Cw\Extbookdatabase\Controller\BookController
      */
     protected $subject = null;
 
     protected function setUp()
     {
         parent::setUp();
-        $this->subject = $this->getMockBuilder(\Cw\ExtBookdatabase\Controller\BookController::class)
+        $this->subject = $this->getMockBuilder(\Cw\Extbookdatabase\Controller\BookController::class)
             ->setMethods(['redirect', 'forward', 'addFlashMessage'])
             ->disableOriginalConstructor()
             ->getMock();
@@ -37,7 +37,7 @@ class BookControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        $bookRepository = $this->getMockBuilder(\Cw\ExtBookdatabase\Domain\Repository\BookRepository::class)
+        $bookRepository = $this->getMockBuilder(\Cw\Extbookdatabase\Domain\Repository\BookRepository::class)
             ->setMethods(['findAll'])
             ->disableOriginalConstructor()
             ->getMock();
@@ -56,7 +56,7 @@ class BookControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function showActionAssignsTheGivenBookToView()
     {
-        $book = new \Cw\ExtBookdatabase\Domain\Model\Book();
+        $book = new \Cw\Extbookdatabase\Domain\Model\Book();
 
         $view = $this->getMockBuilder(\TYPO3\CMS\Extbase\Mvc\View\ViewInterface::class)->getMock();
         $this->inject($this->subject, 'view', $view);
