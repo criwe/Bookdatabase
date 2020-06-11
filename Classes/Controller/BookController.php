@@ -46,7 +46,7 @@ class BookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      * bookRepository
      * 
      * @var \Cw\Extbookdatabase\Domain\Repository\BookRepository
-     * @inject
+     * @TYPO3\CMS\Extbase\Annotation\Inject
      */
     protected $bookRepository = NULL;
 

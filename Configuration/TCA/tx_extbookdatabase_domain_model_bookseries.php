@@ -72,15 +72,18 @@ return [
         ],
         'hidden' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.hidden',
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.hidden',
             'config' => [
                 'type' => 'check',
+                'renderType' => 'checkboxToggle',
+                'default' => 0,
                 'items' => [
-                    '1' => [
-                        '0' => 'LLL:EXT:lang/locallang_core.xlf:labels.enabled'
+                    [
+                        0 => '',
+                        1 => '',
                     ]
                 ],
-            ],
+            ]
         ],
         'starttime' => [
             'exclude' => true,
