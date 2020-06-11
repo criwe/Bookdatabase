@@ -72,7 +72,7 @@ return [
         ],
         'hidden' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.hidden',
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:cm.view',
             'config' => [
                 'type' => 'check',
                 'renderType' => 'checkboxToggle',
@@ -81,6 +81,7 @@ return [
                     [
                         0 => '',
                         1 => '',
+                        'invertStateDisplay' => true
                     ]
                 ],
             ]
