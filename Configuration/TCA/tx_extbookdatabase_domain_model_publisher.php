@@ -11,6 +11,7 @@ return [
         'transOrigPointerField' => 'l10n_parent',
         'transOrigDiffSourceField' => 'l10n_diffsource',
         'delete' => 'deleted',
+        'default_sortby' => "ORDER BY publisher ASC",
         'enablecolumns' => [
             'disabled' => 'hidden',
             'starttime' => 'starttime',
