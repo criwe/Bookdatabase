@@ -1,4 +1,3 @@
-
 plugin.tx_extbookdatabase_booklist {
     view {
         templateRootPaths.0 = EXT:extbookdatabase/Resources/Private/Templates/
@@ -23,7 +22,10 @@ plugin.tx_extbookdatabase_booklist {
         #callDefaultActionIfActionCantBeResolved = 1
     }
 }
+[{$plugin.tx_extbookdatabase_booklist.includejquerycore} == 1]
+    page.includeJSFooter.jquerybookdb = EXT:extbookdatabase/Resources/Public/js/jquery.js
+[end]
+
 page.includeJSFooter.extbookjs = EXT:extbookdatabase/Resources/Public/js/datatables.min.js
-page.includeJSFooter.extbookjs.forceOnTop = 1
 page.includeJSFooter.extbookjszwei = EXT:extbookdatabase/Resources/Public/js/extbookjs.js
 page.includeCSS.extbookdbCss = EXT:extbookdatabase/Resources/Public/css/style.css
