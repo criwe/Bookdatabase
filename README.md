@@ -12,7 +12,7 @@ Works with TYPO3 10.4 (use version 0.1.0 for TYPO3 8.7)
   - Recording of all important data (see above as well as Isbn, description, keywords,... )
 
 - Output 
-  - sortable and filterable (jquery datatables)
+  - sortable and filterable (jQuery DataTables)
   - List and detail view
   - Creates a signature for every book, build from owneritemshortcut-bookuid-locationshortcut, i.e. criwe-12345-self1 
 
@@ -30,6 +30,6 @@ Works with TYPO3 10.4 (use version 0.1.0 for TYPO3 8.7)
  
  - Install via Ext-Manager
  - Create sysfolder for the data and create books, categories etc. there
- - set storage-pid (the sysfolder where the books are) via constant editor
- - insert plugin for output
+ - Set storage-pid (the sysfolder where the books are) and choose if jQuery core should included (default: not included) via constant editor
+ - Insert plugin for output
  
