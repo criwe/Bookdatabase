@@ -185,8 +185,8 @@ return [
                 'cols' => 40,
                 'rows' => 15,
                 'eval' => 'trim',
+                'enableRichtext' => true,
             ],
-            'defaultExtras' => 'richtext:rte_transform'
         ],
         'isbn' => [
             'exclude' => true,
