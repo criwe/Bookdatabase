@@ -3,7 +3,7 @@ Simple TYPO3 Bookdatabase
 
 ## Features:
 
-Works with TYPO3 10.4 (use version 0.1.0 for TYPO3 8.7)
+Works with TYPO3 10.4 (use version 0.1.0 for TYPO3 9.5)
 
 ## Description:
 
