@@ -16,10 +16,15 @@
             "Cw\\Extbookdatabase\\": "Classes"
         }
     },
-  "scripts": {
-    "post-autoload-dump": [
-      "mkdir -p .Build/Web/typo3conf/ext/",
-      "[ -L .Build/Web/typo3conf/ext/extension_builder ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/extbookdatabase"
-    ]
-  }
+    "scripts": {
+        "post-autoload-dump": [
+            "mkdir -p .Build/Web/typo3conf/ext/",
+            "[ -L .Build/Web/typo3conf/ext/extension_builder ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/extbookdatabase"
+        ]
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "extbookdatabase"
+        }
+    }  
 }
