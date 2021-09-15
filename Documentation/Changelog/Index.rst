@@ -6,17 +6,24 @@
 Change log
 ==========
 
+Version 0.1.5
+-------------
+
+- Vendor changed (Vendorname was taken on packagist... need to rename) Dump autoload and clear cache!
+- Documentation added
+
+
 Version 0.1.4
 -------------
 
-Update composer.json (insert extenstion name)
-Sort Bookseries by title 
+- Update composer.json (insert extenstion name)
+- Sort Bookseries by title 
 
 
 Version 0.1.3
 -------------
 
-Fixexs RTE for description field, remove unneeded actions, rename .ts to .typoscript 
+- Fixexs RTE for description field, remove unneeded actions, rename .ts to .typoscript 
 
 
 Version 0.1.2
