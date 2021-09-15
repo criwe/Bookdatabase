@@ -16,7 +16,13 @@ Installation
 
 See :ref:`Editor <editor>`
 
-#. Do some configurations (User extension template or user your sitepackage
+#. Add the static template (Use extension template or user your sitepackage)
+
+.. figure:: ../Images/Installation/statictemplate.png
+   :class: with-shadow
+   :alt: insert plugin.
+ 
+#. Do some configurations (Use extension template or user your sitepackage)
 
 See :ref:`Configuration <configuration>`
 
