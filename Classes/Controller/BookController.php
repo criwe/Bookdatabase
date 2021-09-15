@@ -1,5 +1,5 @@
 <?php
-namespace Cw\Extbookdatabase\Controller;
+namespace Itfoo\Extbookdatabase\Controller;
 
 /***************************************************************
  *
@@ -45,7 +45,7 @@ class BookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     /**
      * bookRepository
      * 
-     * @var \Cw\Extbookdatabase\Domain\Repository\BookRepository
+     * @var \Itfoo\Extbookdatabase\Domain\Repository\BookRepository
      * @TYPO3\CMS\Extbase\Annotation\Inject
      */
     protected $bookRepository = NULL;
@@ -77,10 +77,10 @@ class BookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     /**
      * action show
      * 
-     * @param \Cw\Extbookdatabase\Domain\Model\Book $book
+     * @param \Itfoo\Extbookdatabase\Domain\Model\Book $book
      * @return void
      */
-    public function showAction(\Cw\Extbookdatabase\Domain\Model\Book $book)
+    public function showAction(\Itfoo\Extbookdatabase\Domain\Model\Book $book)
     {
         $this->view->assign('book', $book);
     }

@@ -1,5 +1,5 @@
 <?php
-namespace Cw\Extbookdatabase\Tests\Unit\Controller;
+namespace Itfoo\Extbookdatabase\Tests\Unit\Controller;
 
 /**
  * Test case.
@@ -9,14 +9,14 @@ namespace Cw\Extbookdatabase\Tests\Unit\Controller;
 class CategoryControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 {
     /**
-     * @var \Cw\Extbookdatabase\Controller\CategoryController
+     * @var \Itfoo\Extbookdatabase\Controller\CategoryController
      */
     protected $subject = null;
 
     protected function setUp()
     {
         parent::setUp();
-        $this->subject = $this->getMockBuilder(\Cw\Extbookdatabase\Controller\CategoryController::class)
+        $this->subject = $this->getMockBuilder(\Itfoo\Extbookdatabase\Controller\CategoryController::class)
             ->setMethods(['redirect', 'forward', 'addFlashMessage'])
             ->disableOriginalConstructor()
             ->getMock();
@@ -56,7 +56,7 @@ class CategoryControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function showActionAssignsTheGivenCategoryToView()
     {
-        $category = new \Cw\Extbookdatabase\Domain\Model\Category();
+        $category = new \Itfoo\Extbookdatabase\Domain\Model\Category();
 
         $view = $this->getMockBuilder(\TYPO3\CMS\Extbase\Mvc\View\ViewInterface::class)->getMock();
         $this->inject($this->subject, 'view', $view);
@@ -70,7 +70,7 @@ class CategoryControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function createActionAddsTheGivenCategoryToCategoryRepository()
     {
-        $category = new \Cw\Extbookdatabase\Domain\Model\Category();
+        $category = new \Itfoo\Extbookdatabase\Domain\Model\Category();
 
         $categoryRepository = $this->getMockBuilder(\::class)
             ->setMethods(['add'])
@@ -88,7 +88,7 @@ class CategoryControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function editActionAssignsTheGivenCategoryToView()
     {
-        $category = new \Cw\Extbookdatabase\Domain\Model\Category();
+        $category = new \Itfoo\Extbookdatabase\Domain\Model\Category();
 
         $view = $this->getMockBuilder(\TYPO3\CMS\Extbase\Mvc\View\ViewInterface::class)->getMock();
         $this->inject($this->subject, 'view', $view);
@@ -102,7 +102,7 @@ class CategoryControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function updateActionUpdatesTheGivenCategoryInCategoryRepository()
     {
-        $category = new \Cw\Extbookdatabase\Domain\Model\Category();
+        $category = new \Itfoo\Extbookdatabase\Domain\Model\Category();
 
         $categoryRepository = $this->getMockBuilder(\::class)
             ->setMethods(['update'])
@@ -120,7 +120,7 @@ class CategoryControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function deleteActionRemovesTheGivenCategoryFromCategoryRepository()
     {
-        $category = new \Cw\Extbookdatabase\Domain\Model\Category();
+        $category = new \Itfoo\Extbookdatabase\Domain\Model\Category();
 
         $categoryRepository = $this->getMockBuilder(\::class)
             ->setMethods(['remove'])

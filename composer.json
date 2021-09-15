@@ -1,5 +1,5 @@
 {
-    "name": "cw/ext-bookdatabase",
+    "name": "itfoo/ext-bookdatabase",
     "type": "typo3-cms-extension",
     "description": "Simple Bookdatabase",
     "authors": [
@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Cw\\Extbookdatabase\\": "Classes"
+            "Itfoo\\Extbookdatabase\\": "Classes"
         }
     },
     "scripts": {

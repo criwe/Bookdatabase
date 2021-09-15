@@ -1,5 +1,5 @@
 <?php
-namespace Cw\Extbookdatabase\Tests\Unit\Domain\Model;
+namespace Itfoo\Extbookdatabase\Tests\Unit\Domain\Model;
 
 /**
  * Test case.
@@ -9,14 +9,14 @@ namespace Cw\Extbookdatabase\Tests\Unit\Domain\Model;
 class BookTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 {
     /**
-     * @var \Cw\Extbookdatabase\Domain\Model\Book
+     * @var \Itfoo\Extbookdatabase\Domain\Model\Book
      */
     protected $subject = null;
 
     protected function setUp()
     {
         parent::setUp();
-        $this->subject = new \Cw\Extbookdatabase\Domain\Model\Book();
+        $this->subject = new \Itfoo\Extbookdatabase\Domain\Model\Book();
     }
 
     protected function tearDown()
@@ -316,7 +316,7 @@ class BookTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function setPublisherForPublisherSetsPublisher()
     {
-        $publisherFixture = new \Cw\Extbookdatabase\Domain\Model\Publisher();
+        $publisherFixture = new \Itfoo\Extbookdatabase\Domain\Model\Publisher();
         $this->subject->setPublisher($publisherFixture);
 
         self::assertAttributeEquals(
@@ -343,7 +343,7 @@ class BookTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function setCategoryForObjectStorageContainingCategorySetsCategory()
     {
-        $category = new \Cw\Extbookdatabase\Domain\Model\Category();
+        $category = new \Itfoo\Extbookdatabase\Domain\Model\Category();
         $objectStorageHoldingExactlyOneCategory = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
         $objectStorageHoldingExactlyOneCategory->attach($category);
         $this->subject->setCategory($objectStorageHoldingExactlyOneCategory);
@@ -360,7 +360,7 @@ class BookTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function addCategoryToObjectStorageHoldingCategory()
     {
-        $category = new \Cw\Extbookdatabase\Domain\Model\Category();
+        $category = new \Itfoo\Extbookdatabase\Domain\Model\Category();
         $categoryObjectStorageMock = $this->getMockBuilder(\TYPO3\CMS\Extbase\Persistence\ObjectStorage::class)
             ->setMethods(['attach'])
             ->disableOriginalConstructor()
@@ -377,7 +377,7 @@ class BookTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function removeCategoryFromObjectStorageHoldingCategory()
     {
-        $category = new \Cw\Extbookdatabase\Domain\Model\Category();
+        $category = new \Itfoo\Extbookdatabase\Domain\Model\Category();
         $categoryObjectStorageMock = $this->getMockBuilder(\TYPO3\CMS\Extbase\Persistence\ObjectStorage::class)
             ->setMethods(['detach'])
             ->disableOriginalConstructor()
@@ -405,7 +405,7 @@ class BookTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function setLocationForLocationSetsLocation()
     {
-        $locationFixture = new \Cw\Extbookdatabase\Domain\Model\Location();
+        $locationFixture = new \Itfoo\Extbookdatabase\Domain\Model\Location();
         $this->subject->setLocation($locationFixture);
 
         self::assertAttributeEquals(
@@ -431,7 +431,7 @@ class BookTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function setOwnerForOwnerSetsOwner()
     {
-        $ownerFixture = new \Cw\Extbookdatabase\Domain\Model\Owner();
+        $ownerFixture = new \Itfoo\Extbookdatabase\Domain\Model\Owner();
         $this->subject->setOwner($ownerFixture);
 
         self::assertAttributeEquals(
@@ -457,7 +457,7 @@ class BookTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function setTypeForTypeSetsType()
     {
-        $typeFixture = new \Cw\Extbookdatabase\Domain\Model\Type();
+        $typeFixture = new \Itfoo\Extbookdatabase\Domain\Model\Type();
         $this->subject->setType($typeFixture);
 
         self::assertAttributeEquals(
@@ -483,7 +483,7 @@ class BookTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function setLanguageForLanguageSetsLanguage()
     {
-        $languageFixture = new \Cw\Extbookdatabase\Domain\Model\Language();
+        $languageFixture = new \Itfoo\Extbookdatabase\Domain\Model\Language();
         $this->subject->setLanguage($languageFixture);
 
         self::assertAttributeEquals(
@@ -509,7 +509,7 @@ class BookTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function setBookconditionForBookconditionSetsBookcondition()
     {
-        $bookconditionFixture = new \Cw\Extbookdatabase\Domain\Model\Bookcondition();
+        $bookconditionFixture = new \Itfoo\Extbookdatabase\Domain\Model\Bookcondition();
         $this->subject->setBookcondition($bookconditionFixture);
 
         self::assertAttributeEquals(
@@ -535,7 +535,7 @@ class BookTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function setBookseriesForBookseriesSetsBookseries()
     {
-        $bookseriesFixture = new \Cw\Extbookdatabase\Domain\Model\Bookseries();
+        $bookseriesFixture = new \Itfoo\Extbookdatabase\Domain\Model\Bookseries();
         $this->subject->setBookseries($bookseriesFixture);
 
         self::assertAttributeEquals(
@@ -561,7 +561,7 @@ class BookTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function setPersonborrowedForPersonborrowedSetsPersonborrowed()
     {
-        $personborrowedFixture = new \Cw\Extbookdatabase\Domain\Model\Personborrowed();
+        $personborrowedFixture = new \Itfoo\Extbookdatabase\Domain\Model\Personborrowed();
         $this->subject->setPersonborrowed($personborrowedFixture);
 
         self::assertAttributeEquals(

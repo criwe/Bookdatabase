@@ -1,5 +1,5 @@
 <?php
-namespace Cw\Extbookdatabase\Tests\Unit\Controller;
+namespace Itfoo\Extbookdatabase\Tests\Unit\Controller;
 
 /**
  * Test case.
@@ -9,14 +9,14 @@ namespace Cw\Extbookdatabase\Tests\Unit\Controller;
 class BookconditionControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 {
     /**
-     * @var \Cw\Extbookdatabase\Controller\BookconditionController
+     * @var \Itfoo\Extbookdatabase\Controller\BookconditionController
      */
     protected $subject = null;
 
     protected function setUp()
     {
         parent::setUp();
-        $this->subject = $this->getMockBuilder(\Cw\Extbookdatabase\Controller\BookconditionController::class)
+        $this->subject = $this->getMockBuilder(\Itfoo\Extbookdatabase\Controller\BookconditionController::class)
             ->setMethods(['redirect', 'forward', 'addFlashMessage'])
             ->disableOriginalConstructor()
             ->getMock();
@@ -32,7 +32,7 @@ class BookconditionControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function createActionAddsTheGivenBookconditionToBookconditionRepository()
     {
-        $bookcondition = new \Cw\Extbookdatabase\Domain\Model\Bookcondition();
+        $bookcondition = new \Itfoo\Extbookdatabase\Domain\Model\Bookcondition();
 
         $bookconditionRepository = $this->getMockBuilder(\::class)
             ->setMethods(['add'])

@@ -1,5 +1,5 @@
 <?php
-namespace Cw\Extbookdatabase\Tests\Unit\Controller;
+namespace Itfoo\Extbookdatabase\Tests\Unit\Controller;
 
 /**
  * Test case.
@@ -9,14 +9,14 @@ namespace Cw\Extbookdatabase\Tests\Unit\Controller;
 class OwnerControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 {
     /**
-     * @var \Cw\Extbookdatabase\Controller\OwnerController
+     * @var \Itfoo\Extbookdatabase\Controller\OwnerController
      */
     protected $subject = null;
 
     protected function setUp()
     {
         parent::setUp();
-        $this->subject = $this->getMockBuilder(\Cw\Extbookdatabase\Controller\OwnerController::class)
+        $this->subject = $this->getMockBuilder(\Itfoo\Extbookdatabase\Controller\OwnerController::class)
             ->setMethods(['redirect', 'forward', 'addFlashMessage'])
             ->disableOriginalConstructor()
             ->getMock();
@@ -56,7 +56,7 @@ class OwnerControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function showActionAssignsTheGivenOwnerToView()
     {
-        $owner = new \Cw\Extbookdatabase\Domain\Model\Owner();
+        $owner = new \Itfoo\Extbookdatabase\Domain\Model\Owner();
 
         $view = $this->getMockBuilder(\TYPO3\CMS\Extbase\Mvc\View\ViewInterface::class)->getMock();
         $this->inject($this->subject, 'view', $view);
@@ -70,7 +70,7 @@ class OwnerControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function createActionAddsTheGivenOwnerToOwnerRepository()
     {
-        $owner = new \Cw\Extbookdatabase\Domain\Model\Owner();
+        $owner = new \Itfoo\Extbookdatabase\Domain\Model\Owner();
 
         $ownerRepository = $this->getMockBuilder(\::class)
             ->setMethods(['add'])

@@ -1,5 +1,5 @@
 <?php
-namespace Cw\Extbookdatabase\Tests\Unit\Controller;
+namespace Itfoo\Extbookdatabase\Tests\Unit\Controller;
 
 /**
  * Test case.
@@ -9,14 +9,14 @@ namespace Cw\Extbookdatabase\Tests\Unit\Controller;
 class PublisherControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 {
     /**
-     * @var \Cw\Extbookdatabase\Controller\PublisherController
+     * @var \Itfoo\Extbookdatabase\Controller\PublisherController
      */
     protected $subject = null;
 
     protected function setUp()
     {
         parent::setUp();
-        $this->subject = $this->getMockBuilder(\Cw\Extbookdatabase\Controller\PublisherController::class)
+        $this->subject = $this->getMockBuilder(\Itfoo\Extbookdatabase\Controller\PublisherController::class)
             ->setMethods(['redirect', 'forward', 'addFlashMessage'])
             ->disableOriginalConstructor()
             ->getMock();
@@ -56,7 +56,7 @@ class PublisherControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function showActionAssignsTheGivenPublisherToView()
     {
-        $publisher = new \Cw\Extbookdatabase\Domain\Model\Publisher();
+        $publisher = new \Itfoo\Extbookdatabase\Domain\Model\Publisher();
 
         $view = $this->getMockBuilder(\TYPO3\CMS\Extbase\Mvc\View\ViewInterface::class)->getMock();
         $this->inject($this->subject, 'view', $view);
@@ -70,7 +70,7 @@ class PublisherControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function createActionAddsTheGivenPublisherToPublisherRepository()
     {
-        $publisher = new \Cw\Extbookdatabase\Domain\Model\Publisher();
+        $publisher = new \Itfoo\Extbookdatabase\Domain\Model\Publisher();
 
         $publisherRepository = $this->getMockBuilder(\::class)
             ->setMethods(['add'])
@@ -88,7 +88,7 @@ class PublisherControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function editActionAssignsTheGivenPublisherToView()
     {
-        $publisher = new \Cw\Extbookdatabase\Domain\Model\Publisher();
+        $publisher = new \Itfoo\Extbookdatabase\Domain\Model\Publisher();
 
         $view = $this->getMockBuilder(\TYPO3\CMS\Extbase\Mvc\View\ViewInterface::class)->getMock();
         $this->inject($this->subject, 'view', $view);
@@ -102,7 +102,7 @@ class PublisherControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function updateActionUpdatesTheGivenPublisherInPublisherRepository()
     {
-        $publisher = new \Cw\Extbookdatabase\Domain\Model\Publisher();
+        $publisher = new \Itfoo\Extbookdatabase\Domain\Model\Publisher();
 
         $publisherRepository = $this->getMockBuilder(\::class)
             ->setMethods(['update'])
@@ -120,7 +120,7 @@ class PublisherControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
      */
     public function deleteActionRemovesTheGivenPublisherFromPublisherRepository()
     {
-        $publisher = new \Cw\Extbookdatabase\Domain\Model\Publisher();
+        $publisher = new \Itfoo\Extbookdatabase\Domain\Model\Publisher();
 
         $publisherRepository = $this->getMockBuilder(\::class)
             ->setMethods(['remove'])

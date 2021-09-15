@@ -6,7 +6,7 @@ call_user_func(
     {
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-            'Cw.Extbookdatabase',
+            'Itfoo.Extbookdatabase',
             'Booklist',
             'booklist'
         );
