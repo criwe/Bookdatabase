@@ -13,6 +13,7 @@ $EM_CONF[$_EXTKEY] = [
     'description' => 'Simple Bookdatabase',
     'category' => 'plugin',
     'author' => 'Christoph Werner',
+    'author_company' => 'itfoo',
     'author_email' => 'info@itfoo.de',
     'state' => 'stable',
     'internal' => '',
