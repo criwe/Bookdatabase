@@ -5,7 +5,7 @@ Have a look at [/Documentation/Introduction/Index.rst](./Documentation/Introduct
 
 ## Features:
 
-Works with TYPO3 10.4 (use version 0.1.0 for TYPO3 9.5)
+Works with TYPO3 10.4 - 11.5
 
 ## Description:
 
