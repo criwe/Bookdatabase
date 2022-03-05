@@ -1,29 +1,16 @@
 <?php
-defined('TYPO3_MODE') || die('Access denied.');
+defined('TYPO3_MODE') || die();
 
-call_user_func(
-    function()
-    {
-
-        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-            'Itfoo.Extbookdatabase',
+call_user_func(static function() {
+    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'Extbookdatabase',
             'Booklist',
             [
-                'Book' => 'list, show',
-                'Publisher' => 'list, show',
-                'Category' => 'list, show',
-                'Location' => 'list, show',
-                'Owner' => 'list, show',
-                'Bookcondition' => 'list, show'
+                \Itfoo\Extbookdatabase\Controller\BookController::class  => 'list, show',
             ],
             // non-cacheable actions
             [
-                'Book' => '',
-                'Publisher' => '',
-                'Category' => '',
-                'Location' => '',
-                'Owner' => '',
-                'Bookcondition' => ''
+                \Itfoo\Extbookdatabase\Controller\BookController::class => '',
             ]
         );
 

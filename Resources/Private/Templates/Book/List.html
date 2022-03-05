@@ -19,8 +19,7 @@
     </tr>
 </thead>
     
-<f:widget.paginate objects="{books}" as="paginatedBook" configuration="{itemsPerPage: 9999999, insertAbove: 0, insertBelow: 0, maximumNumberOfLinks: 99999}">
-    <f:for each="{paginatedBook}" as="book">
+    <f:for each="{books}" as="book">
         <tr>
             <td><f:link.action action="show" arguments="{book : book}"> {book.title}</f:link.action></td>
             <td><f:link.action action="show" arguments="{book : book}"> {book.author}</f:link.action></td>
@@ -54,7 +53,6 @@
             
         </tr>
     </f:for>
-</f:widget.paginate>    
 </table>
 
 </f:section>

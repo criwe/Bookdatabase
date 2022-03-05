@@ -44,7 +44,7 @@ class BookControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
         $bookRepository->expects(self::once())->method('findAll')->will(self::returnValue($allBooks));
         $this->inject($this->subject, 'bookRepository', $bookRepository);
 
-        $view = $this->getMockBuilder(\TYPO3\CMS\Extbase\Mvc\View\ViewInterface::class)->getMock();
+        $view = $this->getMockBuilder(\TYPO3Fluid\Fluid\View\ViewInterface::class)->getMock();
         $view->expects(self::once())->method('assign')->with('books', $allBooks);
         $this->inject($this->subject, 'view', $view);
 
@@ -58,7 +58,7 @@ class BookControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     {
         $book = new \Itfoo\Extbookdatabase\Domain\Model\Book();
 
-        $view = $this->getMockBuilder(\TYPO3\CMS\Extbase\Mvc\View\ViewInterface::class)->getMock();
+        $view = $this->getMockBuilder(\TYPO3Fluid\Fluid\View\ViewInterface::class)->getMock();
         $this->inject($this->subject, 'view', $view);
         $view->expects(self::once())->method('assign')->with('book', $book);
 

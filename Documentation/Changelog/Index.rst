@@ -6,10 +6,24 @@
 Change log
 ==========
 
+Version 0.2.0
+-------------
+
+- Ready for TYPO3 11
+- Removed some uneeded code
+- Updates jQuery to 3.6.0
+
+
+Version 0.1.6
+-------------
+
+- Update DataTables to 1.11.3, prior versions were affected by a security flaw, see: https://cdn.datatables.net/1.11.3/
+
+
 Version 0.1.5
 -------------
 
-- Vendor changed (Vendorname was taken on packagist... need to rename) Dump autoload and clear cache!
+- Vendor changed (Vendorname was taken on packagist... need to rename). Dump autoload and clear cache!
 - Documentation added
 
 
