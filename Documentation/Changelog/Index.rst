@@ -12,7 +12,7 @@ Version 0.2.0
 - Ready for TYPO3 11
 - Removed some uneeded code
 - Updates jQuery to 3.6.0
-- replace ext-icon.gif with sgv
+- Replace ext-icon.gif with sgv
 
 
 Version 0.1.6
