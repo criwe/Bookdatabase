@@ -6,13 +6,19 @@
 Change log
 ==========
 
+Version 0.2.1
+-------------
+
+- Update composer.json
+
+
 Version 0.2.0
 -------------
 
 - Ready for TYPO3 11
-- Removed some uneeded code
-- Updates jQuery to 3.6.0
-- Replace ext-icon.gif with sgv
+- Removed some unneeded code
+- Update jQuery to 3.6.0
+- Replace ext-icon.gif with svg
 
 
 Version 0.1.6
