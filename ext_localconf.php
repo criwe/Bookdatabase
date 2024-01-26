@@ -1,8 +1,12 @@
 <?php
 defined('TYPO3') || die();
 
+use Itfoo\Extbookdatabase\Controller\BookController;
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
+
 call_user_func(static function() {
-        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+        ExtensionUtility::configurePlugin(
             'Extbookdatabase',
             'Booklist',
             [
