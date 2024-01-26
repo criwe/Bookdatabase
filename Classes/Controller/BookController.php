@@ -1,7 +1,9 @@
 <?php
+
 declare(strict_types=1);
 namespace Itfoo\Extbookdatabase\Controller;
-/***
+
+/* * *
  *
  * This file is part of the "Bookdatabase" Extension for TYPO3 CMS.
  *
@@ -10,13 +12,15 @@ namespace Itfoo\Extbookdatabase\Controller;
  *
  *  (c) 2017 Christoph Werner <info@itfoo.de>
  *
- ***/
+ * * */
 
-/**
- * BookController
- */
-class BookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
-{
+namespace Itfoo\Extbookdatabase\Controller;
+
+use Psr\Http\Message\ResponseInterface;
+use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
+
+class BookController extends ActionController {
+
     /**
      * bookRepository
      * 
@@ -24,40 +28,23 @@ class BookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      */
     protected $bookRepository = NULL;
 
-    
-     /**
+    /**
      * @param \Itfoo\Extbookdatabase\Domain\Repository\BookRepository $bookRepository
      */
-    public function injectBookRepository(\Itfoo\Extbookdatabase\Domain\Repository\BookRepository $bookRepository)
-    {
+    public function injectBookRepository(\Itfoo\Extbookdatabase\Domain\Repository\BookRepository $bookRepository) {
         $this->bookRepository = $bookRepository;
     }
-    
-    
+
     /**
      * action list
      * 
      * @return string|object|null|void
      */
-  
-    public function listAction()
-    {
-        /*if ($this->request->hasArgument('search')) {
-            $search = $this->request->getArgument('search');
-        }
-        if ($this->request->hasArgument('searchwhat')) {
-            $searchwhat = $this->request->getArgument('searchwhat');
-        }        
-        
-        if($search!='') {
-        $this->view->assign('books', $this->bookRepository->findSearchForm($search, $searchwhat));
-        $this->view->assign('search',$search);
-        }
-        else {*/
+    public function listAction(): ResponseInterface {
         $books = $this->bookRepository->findAll();
         $this->view->assign('books', $books);
-        
-        //}
+
+        return $this->htmlResponse();
     }
 
     /**
@@ -66,8 +53,9 @@ class BookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      * @param \Itfoo\Extbookdatabase\Domain\Model\Book $book
      * @return void
      */
-    public function showAction(\Itfoo\Extbookdatabase\Domain\Model\Book $book)
-    {
+    public function showAction(\Itfoo\Extbookdatabase\Domain\Model\Book $book): ResponseInterface  {
         $this->view->assign('book', $book);
+        return $this->htmlResponse();
     }
+
 }
