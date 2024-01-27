@@ -5,7 +5,7 @@ Have a look at [/Documentation/Introduction/Index.rst](./Documentation/Introduct
 
 ## Features:
 
-Works with TYPO3 10.4 - 11.5
+Works with TYPO3 12.4
 
 ## Description:
 
@@ -26,7 +26,7 @@ Works with TYPO3 10.4 - 11.5
 
 - Cons
   - the extension is designed for my requirements and some things might not be solved optimally
-  - I will maintain the extension for only ONE TYPO3 version (the one I use at the moment)
+  - I will maintain the extension for only ONE TYPO3 version (the one I use at the moment, maybe it still works with the version before)
 
 ## Installation
  
