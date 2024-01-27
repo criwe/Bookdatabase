@@ -1,139 +1,137 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<h1>{book.title} - {book.author}</h1>
-
-<table class="table_tx-ext-bookdatabase details" >
-
-    <f:if condition="{book.translator}">
-    <tr>
-        <th>
-            <f:translate key="tx_extbookdatabase_domain_model_book.translator" />
-        </th>
-        <td>
-        {book.translator}
-        </td>
-    </tr>
-    </f:if>
-    <tr>
-        <th>
+    <f:spaceless>
+        <h1>{book.title} - {book.author}</h1>
+        <table class="table_tx-ext-bookdatabase details" >
+            <f:if condition="{book.translator}">
+                <tr>
+                    <th>
+                <f:translate key="tx_extbookdatabase_domain_model_book.translator" />
+                </th>
+                <td>
+                    {book.translator}
+                </td>
+                </tr>
+            </f:if>
+            <tr>
+                <th>
             <f:translate key="tx_extbookdatabase_domain_model_book.description" />
-        </th>
-        <td>
-        <f:format.html>{book.description}</f:format.html>
-        </td>
-    </tr>
-    <tr>
-        <th>
+            </th>
+            <td>
+            <f:format.html>{book.description}</f:format.html>
+            </td>
+            </tr>
+            <tr>
+                <th>
             <f:translate key="tx_extbookdatabase_domain_model_book.isbn" />
-        </th>
-        <td>
-        {book.isbn}
-        </td>
-    </tr>
-    <tr>
-        <th>
+            </th>
+            <td>
+                {book.isbn}
+            </td>
+            </tr>
+            <tr>
+                <th>
             <f:translate key="tx_extbookdatabase_domain_model_book.publishingyear" />
-        </th>
-        <td>
-        {book.publishingyear}
-        </td>
-    </tr>
-    <tr>
-        <th>
+            </th>
+            <td>
+                {book.publishingyear}
+            </td>
+            </tr>
+            <tr>
+                <th>
             <f:translate key="tx_extbookdatabase_domain_model_book.edition" />
-        </th>
-        <td>
-        {book.edition}
-        </td>
-    </tr>
-    <tr>
-        <th>
+            </th>
+            <td>
+                {book.edition}
+            </td>
+            </tr>
+            <tr>
+                <th>
             <f:translate key="tx_extbookdatabase_domain_model_book.keywords" />
-        </th>
-        <td>
-        {book.keywords}
-        </td>
-    </tr>
-    <tr>
-        <th>
+            </th>
+            <td>
+                {book.keywords}
+            </td>
+            </tr>
+            <tr>
+                <th>
             <f:translate key="tx_extbookdatabase_domain_model_book.signed" />
-        </th>
-        <td>
-                <f:if condition="{book.signed}==1">
-                    <f:then>
+            </th>
+            <td>
+            <f:if condition="{book.signed}==1">
+                <f:then>
                     <f:translate key="tx_extbookdatabase.yes" />
-                    </f:then>
-                    <f:else>
+                </f:then>
+                <f:else>
                     <f:translate key="tx_extbookdatabase.no" />
-                    </f:else>
-                </f:if>
-        </td>
-    </tr>
-    <tr>
-        <th>
+                </f:else>
+            </f:if>
+            </td>
+            </tr>
+            <tr>
+                <th>
             <f:translate key="tx_extbookdatabase_domain_model_book.soldout" />
-        </th>
-        <td>
-                <f:if condition="{book.soldout}==1">
-                    <f:then>
+            </th>
+            <td>
+            <f:if condition="{book.soldout}==1">
+                <f:then>
                     <f:translate key="tx_extbookdatabase.yes" />
-                    </f:then>
-                    <f:else>
+                </f:then>
+                <f:else>
                     <f:translate key="tx_extbookdatabase.nounknown" />
-                    </f:else>
-                </f:if>        
-        </td>
-    </tr>
-    <tr>
-        <th><f:translate key="tx_extbookdatabase_domain_model_book.location" /></th>
-        <td>{book.location.locationitem}</td>
-    </tr>
-    <tr>
-        <th><f:translate key="tx_extbookdatabase_domain_model_book.owner" /></th>
-        <td>{book.owner.owneritem}</td>
-    </tr>
-    <tr>
-        <th><f:translate key="tx_extbookdatabase_domain_model_publisher.publisher" /></th>
-        <td>{book.publisher.publisher}</td>
-    </tr>    
-    <tr>
-        <th><f:translate key="tx_extbookdatabase_domain_model_book.category" /></th>
-        <td><f:for each="{book.category}" as="category">{category.category}</f:for></td>
-    </tr>     
-     <tr>
-        <th><f:translate key="tx_extbookdatabase_domain_model_book.language" /></th>
-        <td>{book.language.languageitem}</td>
-    </tr>   
-     <tr>
-        <th><f:translate key="tx_extbookdatabase_domain_model_book.type" /></th>
-        <td>{book.type.typeitem}</td>
-    </tr>  
-     <tr>
-        <th><f:translate key="tx_extbookdatabase_domain_model_book.bookcondition" /></th>
-        <td>{book.bookcondition.conditionitem }</td>
-    </tr> 
-    <f:if condition="{book.bookseries.title}">     
-     <tr>
-        <th><f:translate key="tx_extbookdatabase_domain_model_book.bookseries" /></th>
-        <td>{book.bookseries.title}</td>
-    </tr>
-     </f:if>
-     <tr>
-        <th><f:translate key="tx_extbookdatabase.signature" /></th>
-        <td> {book.owner.owneritemshortcut}-{book.uid}-{book.location.locationshortcut}</td>
-    </tr> 
-      <tr>
-        <th><f:translate key="tx_extbookdatabase_domain_model_book.borroweddate" /></th>
-        <td>{book.personborrowed.personname}</td>
-    </tr>
-      <tr>
-        <th><f:translate key="tx_extbookdatabase_domain_model_personborrowed" /></th>
-        <td>
+                </f:else>
+            </f:if>        
+            </td>
+            </tr>
+            <tr>
+                <th><f:translate key="tx_extbookdatabase_domain_model_book.location" /></th>
+            <td>{book.location.locationitem}</td>
+            </tr>
+            <tr>
+                <th><f:translate key="tx_extbookdatabase_domain_model_book.owner" /></th>
+            <td>{book.owner.owneritem}</td>
+            </tr>
+            <tr>
+                <th><f:translate key="tx_extbookdatabase_domain_model_publisher.publisher" /></th>
+            <td>{book.publisher.publisher}</td>
+            </tr>    
+            <tr>
+                <th><f:translate key="tx_extbookdatabase_domain_model_book.category" /></th>
+            <td><f:for each="{book.category}" as="category">{category.category}</f:for></td>
+            </tr>     
+            <tr>
+                <th><f:translate key="tx_extbookdatabase_domain_model_book.language" /></th>
+            <td>{book.language.languageitem}</td>
+            </tr>   
+            <tr>
+                <th><f:translate key="tx_extbookdatabase_domain_model_book.type" /></th>
+            <td>{book.type.typeitem}</td>
+            </tr>  
+            <tr>
+                <th><f:translate key="tx_extbookdatabase_domain_model_book.bookcondition" /></th>
+            <td>{book.bookcondition.conditionitem }</td>
+            </tr> 
+            <f:if condition="{book.bookseries.title}">     
+                <tr>
+                    <th><f:translate key="tx_extbookdatabase_domain_model_book.bookseries" /></th>
+                <td>{book.bookseries.title}</td>
+                </tr>
+            </f:if>
+            <tr>
+                <th><f:translate key="tx_extbookdatabase.signature" /></th>
+            <td> {book.owner.owneritemshortcut}-{book.uid}-{book.location.locationshortcut}</td>
+            </tr> 
+            <tr>
+                <th><f:translate key="tx_extbookdatabase_domain_model_book.borroweddate" /></th>
+            <td>{book.personborrowed.personname}</td>
+            </tr>
+            <tr>
+                <th><f:translate key="tx_extbookdatabase_domain_model_personborrowed" /></th>
+            <td>
             <f:if condition="{book.borroweddate}"> 
                 <f:format.date format="d.m.Y">{book.borroweddate}</f:format.date>
             </f:if>
-        </td>
-    </tr>
-  
-    
-    </table>
+            </td>
+            </tr>
+        </table>
+    </f:spaceless>    
 </html>

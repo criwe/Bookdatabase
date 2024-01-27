@@ -1,59 +1,55 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<f:layout name="Default" />
+    <f:layout name="Default" />
+    <f:spaceless>
+        <f:section name="main">
+            <h1>Bücherliste</h1>
+            <f:flashMessages />
+            <table class="tx_extbookdatabase">
+                <thead>
+                    <tr>
+                        <th><f:translate key="tx_extbookdatabase_domain_model_book.title" /></th>
+                <th><f:translate key="tx_extbookdatabase_domain_model_book.author" /></th>
+                <th><f:translate key="tx_extbookdatabase_domain_model_book.category" /></th>
+                <th><f:translate key="tx_extbookdatabase_domain_model_book.location" /></th>
+                <th><f:translate key="tx_extbookdatabase.signature" /></th>
+                <th class="showmenot"><f:translate key="tx_extbookdatabase.bookinfos" /></th>
+                <th class="showmenot"><f:translate key="tx_extbookdatabase.bookuid" /></th>
+                </tr>
+                </thead>
 
-<f:section name="main">
-<h1>Bücherliste</h1>
-
-<f:flashMessages />
-
-<table class="tx_extbookdatabase">
-<thead>
-    <tr>
-        <th><f:translate key="tx_extbookdatabase_domain_model_book.title" /></th>
-        <th><f:translate key="tx_extbookdatabase_domain_model_book.author" /></th>
-        <th><f:translate key="tx_extbookdatabase_domain_model_book.category" /></th>
-        <th><f:translate key="tx_extbookdatabase_domain_model_book.location" /></th>
-        <th><f:translate key="tx_extbookdatabase.signature" /></th>
-        <th class="showmenot"><f:translate key="tx_extbookdatabase.bookinfos" /></th>
-        <th class="showmenot"><f:translate key="tx_extbookdatabase.bookuid" /></th>
-    </tr>
-</thead>
-    
-    <f:for each="{books}" as="book">
-        <tr>
-            <td><f:link.action action="show" arguments="{book : book}"> {book.title}</f:link.action></td>
-            <td><f:link.action action="show" arguments="{book : book}"> {book.author}</f:link.action></td>
-            <td>
-                <f:for each="{book.category}" as="category">
-                    {category.category}<br>
+                <f:for each="{books}" as="book">
+                    <tr>
+                        <td><f:link.action action="show" arguments="{book : book}"> {book.title}</f:link.action></td>
+                    <td><f:link.action action="show" arguments="{book : book}"> {book.author}</f:link.action></td>
+                    <td>
+                    <f:for each="{book.category}" as="category">
+                        {category.category}<br>
+                    </f:for>
+                    </td>
+                    <td>
+                        {book.location.locationitem}
+                    </td>
+                    <td>
+                        {book.owner.owneritemshortcut}-{book.uid}-{book.location.locationshortcut}
+                    </td>
+                    <td class="showmenot">
+                        <p><f:translate key="tx_extbookdatabase_domain_model_book.translator" />: {book.translator}</p>
+                    <p><f:translate key="tx_extbookdatabase_domain_model_book.isbn" />: {book.isbn}</p>
+                    <p><f:translate key="tx_extbookdatabase_domain_model_book.publishingyear" />: {book.publishingyear}</p>
+                    <p><f:translate key="tx_extbookdatabase_domain_model_book.keywords" />: {book.keywords}</p>
+                    <p><f:translate key="tx_extbookdatabase_domain_model_book.location" />: {book.location.locationitem}</p>
+                    <p><f:translate key="tx_extbookdatabase_domain_model_book.owner" />: {book.owner.owneritem}</p>
+                    <p><f:translate key="tx_extbookdatabase_domain_model_publisher.publisher" />: {book.publisher.publisher}</p>
+                    <p><f:translate key="tx_extbookdatabase_domain_model_book.category" />: {category.category}</p>
+                    <p><f:translate key="tx_extbookdatabase_domain_model_book.type" />: {book.type.typeitem}</p>
+                    <p><f:translate key="tx_extbookdatabase_domain_model_book.bookseries" />: {book.bookseries.title}</p>           
+                    </td>
+                    <td class="showmenot">
+                        {book.uid}
+                    </td>
+                    </tr>
                 </f:for>
-            </td>
-            <td>
-            {book.location.locationitem}
-            </td>
-            <td>
-                {book.owner.owneritemshortcut}-{book.uid}-{book.location.locationshortcut}
-            </td>
-            <td class="showmenot">
-             <p><f:translate key="tx_extbookdatabase_domain_model_book.translator" />: {book.translator}</p>
-             <p><f:translate key="tx_extbookdatabase_domain_model_book.isbn" />: {book.isbn}</p>
-             <p><f:translate key="tx_extbookdatabase_domain_model_book.publishingyear" />: {book.publishingyear}</p>
-             <p><f:translate key="tx_extbookdatabase_domain_model_book.keywords" />: {book.keywords}</p>
-             <p><f:translate key="tx_extbookdatabase_domain_model_book.location" />: {book.location.locationitem}</p>
-             <p><f:translate key="tx_extbookdatabase_domain_model_book.owner" />: {book.owner.owneritem}</p>
-             <p><f:translate key="tx_extbookdatabase_domain_model_publisher.publisher" />: {book.publisher.publisher}</p>
-             <p><f:translate key="tx_extbookdatabase_domain_model_book.category" />: {category.category}</p>
-             <p><f:translate key="tx_extbookdatabase_domain_model_book.type" />: {book.type.typeitem}</p>
-             <p><f:translate key="tx_extbookdatabase_domain_model_book.bookseries" />: {book.bookseries.title}</p>           
-            </td>
-	    <td class="showmenot">
-		{book.uid}
-	    </td>
-
-            
-        </tr>
-    </f:for>
-</table>
-
-</f:section>
+            </table>
+        </f:section>
+    </f:spaceless>
 </html>
