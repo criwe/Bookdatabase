@@ -6,6 +6,15 @@
 Change log
 ==========
 
+Version 0.3.0
+-------------
+
+- Ready for TYPO3 12
+- Cleanups
+- Update jQuery to 3.7.1
+- Bugfix checkboxes (soldout / signed)
+
+
 Version 0.2.1
 -------------
 
