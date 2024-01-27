@@ -230,26 +230,28 @@ return [
             'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.signed',
             'config' => [
                 'type' => 'check',
-                'items' => [
-                    '1' => [
-                        '0' => 'LLL:EXT:lang/locallang_core.xlf:labels.enabled'
-                    ]
-                ],
+                'renderType' => 'checkboxToggle',
                 'default' => 0,
-            ]
+                'items' => [
+                    [
+                        'label' => '',
+                    ],
+                ],
+            ],
         ],
         'soldout' => [
             'exclude' => true,
             'label' => 'LLL:EXT:extbookdatabase/Resources/Private/Language/locallang_db.xlf:tx_extbookdatabase_domain_model_book.soldout',
             'config' => [
                 'type' => 'check',
-                'items' => [
-                    '1' => [
-                        '0' => 'LLL:EXT:lang/locallang_core.xlf:labels.enabled'
-                    ]
-                ],
+                'renderType' => 'checkboxToggle',
                 'default' => 0,
-            ]
+                'items' => [
+                    [
+                        'label' => '',
+                    ],
+                ],
+            ],
         ],
         'borroweddate' => [
             'exclude' => true,
